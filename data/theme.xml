@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Vienna Optimised" version="1809">
+	<properties>
+		<templateset><![CDATA[11]]></templateset>
+		<editortheme><![CDATA[mybb.css]]></editortheme>
+		<imgdir><![CDATA[images/vienna]]></imgdir>
+		<logo><![CDATA[images/vienna/logo.png]]></logo>
+		<tablespace><![CDATA[5]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<color><![CDATA[]]></color>
+		<disporder><![CDATA[a:11:{s:13:"dropdowns.css";i:1;s:8:"tips.css";i:4;s:9:"extra.css";i:6;s:10:"global.css";i:7;s:8:"menu.css";i:10;s:8:"css3.css";i:12;s:17:"thread_status.css";i:13;s:16:"star_ratings.css";i:15;s:10:"usercp.css";i:16;s:9:"modcp.css";i:17;s:14:"showthread.css";i:18;}]]></disporder>
+	</properties>
+
+	<stylesheets>
+		<stylesheet name="global.css" version="1809"><![CDATA[#shoutbox{margin-bottom:10px;border:2px solid rgba(0,0,0,.1)}#shoutbox .head{padding:8px}#shoutbox.front .head{cursor:pointer}#shoutbox .head .right{float:right;margin:0;font-size:13px}#shoutbox.collapsed .head{opacity:.6}#shoutbox.collapsed .body{display:none}#shoutbox .panel{border-top:2px solid rgba(0,0,0,.1)}#shoutbox input.text{margin:0;padding:10px 8px;width:100%;box-sizing:border-box;border:none;box-shadow:inset 0 2px 4px rgba(0,0,0,.08);font-family:Arial,sans-serif;font-size:12px;color:#000}#shoutbox .blocked,#shoutbox .minposts{padding:6px;font-size:11px}#shoutbox .panel.minposts{background:#fffed8;color:#727250}#shoutbox .panel.blocked{background:#fcefef;color:#543a3a}#shoutbox .panel p{margin:0}#shoutbox .window{border-top:2px solid rgba(0,0,0,.1);overflow-y:scroll}#shoutbox .data{display:table;width:100%;border-top:2px solid rgba(0,0,0,.1);font-family:Arial,sans-serif;font-size:12px}#shoutbox.front .data{border-top:none}#shoutbox .entry{display:table-row!important;width:100%;transition:background-color .2s}#shoutbox .entry:nth-child(even){background-color:rgba(0,0,0,.01)}#shoutbox .entry.new{background-color:rgba(255,255,100,.1)}#shoutbox .entry:target{background-color:rgba(50,200,255,.1)}#shoutbox .entry>div{border-bottom:1px dashed rgba(0,0,0,.05);display:table-cell;padding:6px}#shoutbox .entry:last-child>div{border-bottom:none}#shoutbox .avatar img{margin:0 auto;vertical-align:middle;max-height:20px;max-width:20px;border:1px solid rgba(255,255,255,.1);box-shadow:0 0 2px rgba(0,0,0,.1);cursor:pointer}#shoutbox .user{border-right:1px solid rgba(0,0,0,.05);text-align:right;white-space:nowrap}#shoutbox .text{width:100%;color:#555}#shoutbox .info{font-size:11px;color:#aaa;white-space:nowrap;text-align:right}#shoutbox .entry.unread .info:before{display:inline-block;position:relative;top:-2px;margin-right:10px;height:4px;width:4px;content:'';background:rgba(255,100,0,.8);border-radius:10px}#shoutbox .info a{color:inherit}#shoutbox .mod{padding:6px 8px;font-size:9px;font-weight:700;color:#aaa;text-decoration:none}#shoutbox .mod:nth-of-type(2){margin-right:5px;border-left:1px solid rgba(0,0,0,.1)}#shoutbox .ip{margin-right:10px;color:#cecece}body{background:url(https://clwo.eu/images/vienna/bg_top.png) top left repeat-x,url(https://clwo.eu/images/vienna/bg_clwo.png) fixed;color:#333;text-align:center;line-height:1.4;margin:0;font-family:'Droid Sans',sans-serif;font-size:13px;overflow-y:scroll}.post_body a:active,.post_body a:hover,.post_body a:link,.post_body a:visited{color:#bf4343}a:link{color:#121517;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px}a:visited{color:#3a454a;text-decoration:none}a:active,a:hover{color:#232a2d;text-decoration:none;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}#container{text-align:left;line-height:1.4;margin:0;color:#333;font-family:'Droid Sans',sans-serif;font-size:13px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 0 24px 0 rgba(0,0,0,.75);-moz-box-shadow:0 0 24px 0 rgba(0,0,0,.75);box-shadow:0 0 24px 0 rgba(0,0,0,.75)}.wrapper{margin:auto}#content{background:#fdfdfd;width:auto!important;padding:10px;overflow:hidden;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}.forum_status{width:40px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;height:30px;display:inline-block;background-repeat:no-repeat;text-shadow:#fff 0 1px 1px;font-size:20px}.forum_status i{display:inline-block;padding:5px}.forum_off,.forum_offlink,.forum_offlock,.forum_on{color:#646464;text-shadow:#fff 0 1px 1px}.forum_off i{color:#646464;opacity:.4;text-shadow:#fff 0 1px 1px}.forum_offlock i:before{color:#646464;content:"\f05e";text-shadow:#fff 0 1px 1px}.forum_offlink i:before{color:#646464;content:"\f079";text-shadow:#fff 0 1px 1px}.subforumicon{width:5px;height:5px;display:inline-block;margin:0 15px;font-size:5px}.subforum_minioff,.subforum_miniofflink,.subforum_miniofflock,.subforum_minion{color:#646464;font-size:5px}.subforum_minioff{color:#646464;opacity:.4;font-size:5px}.subforum_miniofflink i:before,.subforum_miniofflock i:before{color:#646464;content:"\f111";font-size:5px}#header ul.menu{margin:0;padding:0;list-style:none}#header ul.menu li{margin:0 7px;display:inline}#header ul.menu li a{display:inline-block}#logo ul.top_links{font-weight:700;text-align:right;margin:-10px 5px 0 0}#logo ul.top_links a.search{background-position:0 0}#logo ul.top_links a.memberlist{background-position:0 -20px}#logo ul.top_links a.calendar{background-position:0 -40px}#logo ul.top_links a.help{background-position:0 -60px}#logo ul.top_links a.portal{background-position:0 -180px}#panel .upper a.logout{font-weight:700;background:url(images/headerlinks_sprite.png) right -80px no-repeat;padding-right:20px;margin-left:10px}#panel .upper a.login,#panel .upper a.lost_password{background:url(images/headerlinks_sprite.png) 0 -100px no-repeat;padding-left:20px;margin-left:10px;font-weight:700}#panel .upper a.register{background:url(images/headerlinks_sprite.png) right -80px no-repeat;padding-right:20px;margin-left:10px;font-weight:700}#panel .lower ul.panel_links{float:left}#panel .lower ul.panel_links a.usercp{background-position:0 -120px}#panel .lower ul.panel_links a.modcp{background-position:0 -140px}#panel .lower ul.panel_links a.admincp{background-position:0 -160px}#panel .lower ul.user_links{float:right}#panel .lower ul.user_links li a{padding:0;background-image:none}#panel .upper{background:#eff1f7;border-top:1px solid #444;border-bottom:1px solid #000;padding:10px;clear:both;color:#fff}#panel .upper a:active,#panel .upper a:hover,#panel .upper a:link,#panel .upper a:visited{color:#fff}#panel .lower{background:#efefef;color:#fff;border-top:1px solid #fff;border-bottom:1px solid #ccc;padding:5px}#panel .lower a:active,#panel .lower a:hover,#panel .lower a:link,#panel .lower a:visited{color:#fff}#quick_login .remember_me input{vertical-align:middle;margin:-3px 0 0 5px}#footer{color:#fff;clear:both}#footer ul.menu{margin:0;padding:0;list-style:none}#footer ul.menu li{margin:0 5px;display:inline}#footer .upper{padding:10px;overflow:hidden;margin-right:-10px;margin-left:-10px;background:#eee;border-top:1px solid #d7d7d7;color:#777;text-shadow:0 1px 1px #fff;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #fff;-moz-box-shadow:inset 0 0 1px 1px #fff;box-shadow:inset 0 0 1px 1px #fff;border-bottom:1px solid #d7d7d7;font-family:'Droid Sans',sans-serif;font-size:13px}#footer a:active,#footer a:hover,#footer a:link,#footer a:visited{color:#777;text-shadow:0 1px 1px #fff;font-family:'Droid Sans',sans-serif;font-size:13px;font-weight:400}#footer .upper .language{float:right;margin:-1px -1px -1px 15px;color:#777;text-shadow:0 1px 1px #fff}#footer .upper .language select{border-color:#d7d7d7;color:#777;text-shadow:0 1px 1px #fff}#footer .upper .theme{float:right;margin:-1px -1px -1px 15px;color:#777;text-shadow:0 1px 1px #fff}#footer .upper .theme select{border-color:#d7d7d7;color:#777;text-shadow:0 1px 1px #fff}#footer .upper ul.bottom_links{float:left;margin:4px 0 0;color:#777;text-shadow:0 1px 1px #fff}#footer .lower{color:#515151;padding:6px 6px 12px;overflow:hidden;text-shadow:0 1px 1px #fff;font-family:'Droid Sans',sans-serif;font-size:13px}#footer .lower a:link,#footer .lower a:visited{color:#515151;text-shadow:0 1px 1px #fff;font-family:'Droid Sans',sans-serif;font-size:13px}#footer .lower a:active,#footer .lower a:hover{color:#515151;text-shadow:0 1px 1px #fff;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px}#footer .lower #current_time{color:#515151;float:right;text-shadow:0 1px 1px #fff}#debug{color:#515151;float:center;text-align:center;margin-top:5px;text-shadow:0 1px 1px #fff;font-family:'Droid Sans',sans-serif;font-size:13px}.scaleimages img{max-width:100%}table{color:#333;font-family:'Droid Sans',sans-serif;font-size:13px;margin-top:15px}.tborder{width:100%;margin:auto;padding:1px;background:#fff;border:1px solid #dcdcdc;box-shadow:rgba(0,0,0,.05) 0 1px 4px}.tborder2{width:100%;margin:auto;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background:#fff;border:1px solid #dcdcdc;box-shadow:rgba(0,0,0,.05) 0 1px 4px}.tborder4{background:#fff;width:100%;margin:auto;padding:1px;box-shadow:rgba(0,0,0,.05) 0 1px 4px}.tfixed{table-layout:fixed;word-wrap:break-word}.thead{background:#333;color:#fff;padding:10px;border:1px solid #191a21;box-shadow:0 0 0 1px rgba(0,0,0,.25) inset,0 1px 4px rgba(0,0,0,.15);text-shadow:rgba(0,0,0,.25) 0 -1px 0;font-family:'Droid Sans',sans-serif;font-size:13px}.thead a:active,.thead a:hover,.thead a:link,.thead a:visited{color:#fff;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px}.tcat{background:#fff;color:#333;text-decoration:none;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding:6px;font-family:'Droid Sans',sans-serif;font-size:12px;text-shadow:1px 1px 0 #fff}.tcat a:active,.tcat a:hover,.tcat a:link,.tcat a:visited{color:#333;font-family:'Droid Sans',sans-serif;font-size:12px}.trow1,.trow2{background:#fff;color:#333;padding:13px;border-bottom:1px solid #e5e5e5;text-shadow:1px 1px 0 #fff;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px}.trow3{background:#fff;color:#333;padding:10px;text-shadow:1px 1px 0 #fff;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px}.trow_shaded{background:url(images/vienna/tbg.png) bottom left repeat-x #fdfdfd;color:#333;padding:13px;border-bottom:1px solid #e5e5e5;text-decoration:none;font-size:14px;text-shadow:1px 1px 0 #fff}.no_bottom_border{border-bottom:0}.post.unapproved_post{background:#ffdde0}.post.unapproved_post .post_author{border-bottom-color:#ffb8be}.post.classic.unapproved_post .post_author{border-color:#ffb8be}.post.unapproved_post .post_controls{border-top-color:#ffb8be}.post.deleted_post,.trow_deleted{background:#e8deff}.trow_selected,tr.trow_selected td{background:#fffbd9;color:#333;border-right-color:#f7e86a;border-bottom-color:#f7e86a}.trow_selected a:active,.trow_selected a:hover,.trow_selected a:link,.trow_selected a:visited{color:#333}.trow_sep{background:#22242d;color:#fff;border:1px solid #191a21;box-shadow:0 0 0 1px rgba(0,0,0,.25) inset,0 1px 4px rgba(0,0,0,.15);text-shadow:rgba(0,0,0,.25) 0 -1px 0;padding:10px;font-family:'Droid Sans',sans-serif;font-size:13px;font-weight:700!important}.tfoot{background:#22242d;color:#fff;border:1px solid #191a21;box-shadow:0 0 0 1px rgba(0,0,0,.25) inset,0 1px 4px rgba(0,0,0,.15);text-shadow:rgba(0,0,0,.25) 0 -1px 0;padding:8px;-moz-border-bottom-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;-moz-border-bottom-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;font-size:14px}.tfoot a:active,.tfoot a:hover,.tfoot a:link,.tfoot a:visited{color:#fff;text-decoration:none}.thead input.textbox,.thead select{border:1px solid #263c30}.bottommenu{color:#fff;background:#384247;border-top:1px solid #232a2d;border-bottom:1px solid #232a2d;padding:10px}.navigation{background:#eee;border:1px solid #d7d7d7;text-shadow:1px 1px 0 #fff;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #fff;-moz-box-shadow:inset 0 0 1px 1px #fff;box-shadow:inset 0 0 1px 1px #fff;padding:8px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;color:#556571;font-size:13px;font-style:normal;font-weight:400}.navigation a:active,.navigation a:hover,.navigation a:link,.navigation a:visited{text-shadow:1px 1px 0 #fff;color:#556571;font-size:13px;font-style:normal;font-weight:400;text-decoration:none}.navigation .active{text-shadow:1px 1px 0 #fff;color:#556571;font-size:13px;font-style:normal;font-weight:400}.smalltext{font-family:'Droid Sans',sans-serif;font-size:13px}.largetext{font-family:'Droid Sans',sans-serif;font-size:13px;font-weight:700!important}.protext{font-size:17px;font-weight:700;font-family:Source Sans Pro,Tahoma,Helvetica Neue,Arial,sans-serif}fieldset{font-size:13px;border:1px dashed #ccc;margin:0}fieldset.trow1,fieldset.trow2{border:1px dashed #ccc}fieldset.align_right{text-align:right}input.textbox{background:#fff;border:1px solid #ccc;padding:6px;outline:0;-moz-background-clip:padding;-webkit-background-clip:padding-box;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 0 0 1000px #fff inset;color:#333;font-family:Source Sans Pro,Tahoma,Helvetica Neue,Arial,sans-serif;font-size:13px;font-style:normal}textarea{background:#fff;border:1px solid #ccc;padding:5px;line-height:1.4;outline:0;-moz-box-shadow:inset 0 0 10px #efefef;-webkit-box-shadow:inset 0 0 10px #efefef;box-shadow:inset 0 0 10px #efefef;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;color:#333;font-family:Source Sans Pro,Tahoma,Helvetica Neue,Arial,sans-serif;font-size:13px;font-style:normal}select{background:#fff;color:#333;border:1px solid #ccc;padding:3px;line-height:1.4;outline:0;-moz-box-shadow:inset 0 0 10px #efefef;-webkit-box-shadow:inset 0 0 10px #efefef;box-shadow:inset 0 0 10px #efefef;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;font-family:Source Sans Pro,Tahoma,Helvetica Neue,Arial,sans-serif;font-size:13px;font-style:normal}button,input.button{background:padding-box #161617;color:#fff;border:1px solid #000;text-shadow:1px 1px 0 #161617;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-box-shadow:rgba(0,0,0,.3) 0 1px 4px,inset rgba(255,255,255,.13) 0 1px 0;-moz-box-shadow:rgba(0,0,0,.3) 0 1px 4px,inset rgba(255,255,255,.13) 0 1px 0;box-shadow:rgba(0,0,0,.3) 0 1px 4px,inset rgba(255,255,255,.13) 0 1px 0;-moz-background-clip:padding;-webkit-background-clip:padding-box;font-family:Source Sans Pro,Tahoma,Helvetica Neue,Arial,sans-serif;font-size:12px;font-style:normal;padding:5px 10px;cursor:pointer;outline:0}button:hover,input.button:hover{color:#ddd;-moz-transition:all 0s ease 0s;-webkit-transition:all 0s ease 0s;-o-transition:all 0s ease 0s;-ms-transition:all 0s ease 0s}form{margin:0;padding:0}form input.error{border:1px solid #f30;color:#f30;background:#fff;padding:3px;outline:0;font-size:13px}form input.valid{border:1px solid #0c0;background:#fff;padding:3px;outline:0;font-size:13px}form label.error{color:#f30;margin:5px;padding:0;display:block;font-weight:700;font-size:13px}form #message{width:500px}.editor,.editor_control_bar{background:url(images/vienna/tbg.png) bottom left repeat-x #fdfdfd;border:1px solid #ccc}.post .editor_control_bar{background:url(images/vienna/tbg.png) bottom left repeat-x #fdfdfd}.popup_menu{background:#fff;border:1px solid #ccc;padding:3px 8px;text-shadow:1px 1px 0 #fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 6px rgba(0,0,0,.15);-moz-box-shadow:0 1px 6px rgba(0,0,0,.15);box-shadow:0 1px 6px rgba(0,0,0,.15)}.popup_menu .popup_item:hover{text-decoration:none;color:#686868;text-shadow:1px 1px 0 #fff}.trow_reputation_positive{background:#d5eaa1;border-top:1px solid #b3cc7c;text-shadow:1px 1px 0 #e9ffa4;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #e9ffa4;-moz-box-shadow:inset 0 0 1px 1px #e9ffa4;box-shadow:inset 0 0 1px 1px #e9ffa4}.trow_reputation_negative{background:#ff7f8e;border-top:1px solid #9e2635;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #f14a5e;-moz-box-shadow:inset 0 0 1px 1px #f14a5e;box-shadow:inset 0 0 1px 1px #f14a5e;text-shadow:1px 1px 0 #d36c78;color:#fff}.trow_reputation_negative a:active,.trow_reputation_negative a:hover,.trow_reputation_negative a:link,.trow_reputation_negative a:visited{color:#fff}.reputation_positive{color:green}.reputation_neutral{color:#444}.reputation_negative{color:red;text-shadow:1px 1px 0 #d36c78}.repbox{background:#d5eaa1;border:1px solid #b3cc7c;text-shadow:1px 1px 0 #e9ffa4;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #e9ffa4;-moz-box-shadow:inset 0 0 1px 1px #e9ffa4;box-shadow:inset 0 0 1px 1px #e9ffa4;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;font-size:16px;font-weight:700;padding:5px 7px}._minus,._neutral,._plus{background:#d5eaa1;border:1px solid #b3cc7c;text-shadow:1px 1px 0 #e9ffa4;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #e9ffa4;-moz-box-shadow:inset 0 0 1px 1px #e9ffa4;box-shadow:inset 0 0 1px 1px #e9ffa4;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}img{border:none}img.attachment{border:1px solid #d7d7d7;padding:2px}hr{border-bottom:1px dashed #d7d7d7}.clear{clear:both}.float_left{float:left}.float_right{float:right}.hidden{display:none;float:none;width:1%}.hiddenrow{display:none}.selectall{background:#fffbd9;border-bottom:1px solid #f7e86a;color:#333;text-align:center}.expcolimage{float:right;width:auto;vertical-align:middle;margin-top:3px}.tcat_menu>.expcolimage{margin-top:0}blockquote{background:#f5f5f5;margin:0;padding:15px;-moz-border-top-left-radius:3px;-webkit-border-top-left-radius:3px;border-top-left-radius:3px;border-left:5px solid #9e2635;text-shadow:1px 1px 0 #fff;font-family:'Droid Sans',sans-serif;font-size:13px}blockquote cite{color:#333;text-shadow:1px 1px 0 #fff;display:block;margin:-15px -15px 5px;padding:10px;-moz-border-top-left-radius:3px;-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-moz-border-top-right-radius:3px;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px;font-weight:700}blockquote cite span{color:#333;float:right;text-shadow:1px 1px 0 #fff;font-family:'Droid Sans',sans-serif;font-size:13px}blockquote cite span.highlight{float:none;font-weight:700;padding-bottom:0}.codeblock{background:#f5f5f5;margin:0;padding:15px;-moz-border-top-left-radius:3px;-webkit-border-top-left-radius:3px;border-top-left-radius:3px;border-left:5px solid #324e66;text-shadow:1px 1px 0 #fff;font-family:'Droid Sans',sans-serif;font-size:13px}.codeblock .title{text-shadow:1px 1px 0 #fff;display:block;padding:10px;-moz-border-top-left-radius:3px;-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-moz-border-top-right-radius:3px;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;border-bottom:1px dashed #ccc;text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px;font-weight:700}.codeblock code{overflow:auto;height:auto;max-height:200px;display:block;font-family:'Droid Sans',sans-serif;font-size:13px}.smilie{vertical-align:middle}.smilie_pointer{cursor:pointer}.separator{margin:5px;padding:0;height:0;font-size:1px;list-style-type:none}.popup_menu .popup_item_container{color:#686868;padding:4px;font-size:13px;font-style:normal}.popup_menu .popup_item{color:#686868;font-size:13px;font-style:normal;text-shadow:1px 1px 0 #fff}.popup_menu a.popup_item:hover{text-decoration:none;color:#686868;text-shadow:1px 1px 0 #fff}.subject_new{font-weight:700}.highlight{background:#ffc;padding-top:3px;padding-bottom:3px}.pm_alert{background:#74864e;color:#fff;text-align:center;padding:8px 18px;margin-bottom:15px;border:1px solid #617042;text-shadow:0 1px 1px #617042;font-size:12px;font-style:normal;font-weight:400}.pm_alert a:active,.pm_alert a:hover,.pm_alert a:link,.pm_alert a:visited{color:#fff;text-shadow:0 1px 1px #617042;font-size:12px;font-style:normal;font-weight:400}.red_alert{text-align:center;padding:8px 18px;word-wrap:break-word;background:#b23636;color:#fff;margin:2px 2px 6px;-webkit-transition:all .5s ease;text-shadow:1px 1px 0 #882929;box-shadow:0 0 0 1px rgba(0,0,0,.25) inset,0 1px 4px rgba(0,0,0,.15);text-decoration:none;font-family:'Droid Sans',sans-serif;font-style:normal;font-weight:400;font-size:12px}.red_alert a:active,.red_alert a:hover,.red_alert a:link,.red_alert a:visited{color:#fff;text-shadow:1px 1px 0 #882929;font-size:12px}.high_warning{color:#c00}.moderate_warning{color:#f3611b}.low_warning{color:#ae5700}.online{color:#15a018}.offline{color:#c7c7c7}div.error{padding:5px 10px;border-top:2px solid #ffd324;border-bottom:2px solid #ffd324;background:#fff6bf;font-size:13px}div.error p{margin:0;color:#333;font-weight:400}div.error p em{font-style:normal;font-weight:700;padding-left:24px;display:block;color:#c00;background:url(images/error.png) 0 no-repeat}div.error ul{margin-left:24px}.pagination{font-size:12px;padding-top:10px;margin-bottom:5px}.tcat .pagination,.tfoot .pagination{padding-top:0}.pagination .pages{color:#395063;text-shadow:1px 1px 0 #fff;font-size:13px;font-weight:700}.pagination .pagination_current,.pagination a{background:#fdfdfd;padding:3px 6px;text-shadow:1px 1px 0 #fff;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #fff;-moz-box-shadow:inset 0 0 1px 1px #fff;box-shadow:inset 0 0 1px 1px #fff;border:1px solid #e5e5e5;color:#737373;font-size:12px}.pagination a{background:#f5f5f5;border:1px solid #ccc}.pagination .pagination_current{background:#b23636;color:#fff;padding:5px 7px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;border:none;text-shadow:1px 1px 0 #882929;box-shadow:0 0 0 1px rgba(0,0,0,.25) inset,0 1px 4px rgba(0,0,0,.15);font-size:12px;font-style:normal;font-weight:700}.pagination a:hover{-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;text-decoration:none}.pagination .go_page img{margin-bottom:-4px}.drop_go_page{background:#f5f5f5;padding:4px}.pagination_breadcrumb{background-color:#efefef;border:1px solid #fff;outline:#ccc solid 1px;padding:5px;margin-top:5px;font-weight:400}.pagination_breadcrumb_link{vertical-align:middle;cursor:pointer}.thread_legend,.thread_legend dd{margin:0;padding:0}.thread_legend dd{padding-bottom:4px;margin-right:15px}.thread_legend img{margin-right:4px;vertical-align:bottom}.forum_legend,.forum_legend dd,.forum_legend dt{margin:0;padding:0}.forum_legend dd{float:left;margin-right:10px;margin-top:7px}.forum_legend dt{margin-right:10px;float:left}.success_message{color:#00b200;font-weight:700;font-size:13px;margin-bottom:10px}.error_message{color:#c00;font-weight:700;font-size:13px;margin-bottom:10px}#posts_container{padding:0}.ignored_post{border-top:3px solid #333;padding:15px}.ignored_post .show_ignored_post{margin-top:-15px}.ignored_post .show_ignored_post a.button span{background-position:0 -400px}.post{overflow:hidden}.post.classic{padding-top:15px}.post .post_author{background:#eee;border:1px solid #d7d7d7;color:#777;text-shadow:1px 1px 0 #fff;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #fff;-moz-box-shadow:inset 0 0 1px 1px #fff;box-shadow:inset 0 0 1px 1px #fff;padding:5px;overflow:hidden}.post.classic .post_author{width:15%;border:1px solid #a5cae4;float:left;margin:0 1% 15px 0;padding:25px 1%;border-left:0}.post .post_author .buddy_status{vertical-align:middle;margin-top:-4px}.post .post_author div.author_avatar{float:left;margin-right:3px}.post.classic .post_author div.author_avatar{float:none;text-align:center;margin-bottom:8px}.post .post_author div.author_avatar img{padding:3px;border:1px solid #ddd;background:#fff;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 2px 2px rgba(0,0,0,.1);-moz-box-shadow:0 2px 2px rgba(0,0,0,.1);-khtml-box-shadow:0 2px 2px rgba(0,0,0,.1);box-shadow:0 2px 2px rgba(0,0,0,.1)}.post .post_author div.author_information{float:left;padding:6px 8px}.post.classic .post_author div.author_information{float:none;padding:0;text-align:center}.post .post_author div.author_statistics{float:right;font-size:13px;padding:3px 10px 3px 5px;color:#666;line-height:1.3}.post.classic .post_author div.author_statistics{border-top:1px dashed #ccc;margin:6px 0 0;padding:6px 6px 3px;float:none}.post .post_head{font-size:13px;padding-bottom:4px;border-bottom:1px dashed #ccc;margin-bottom:4px}.post .post_head span.post_date{color:#666;font-size:13px}.post .post_head span.edited_post{font-size:13px;color:#999}.post .post_head span.edited_post a{color:#666;font-size:13px}.post_body{padding:12px 0;font-size:13px}.post.classic .post_content{float:left;width:79%;padding:0 1% 5px}.post_content{padding:9px 10px 5px}.post_content .signature{margin-top:5px;border-top:1px dashed #ccc;padding:10px 0 4px}.post .post_meta{margin:4px 0;font-size:13px;color:#999}.post .post_meta a:active,.post .post_meta a:hover,.post .post_meta a:link,.post .post_meta a:visited{color:#777;font-size:13px}.post_controls{background:#eee;color:#777;clear:both;border:1px solid #d7d7d7;text-shadow:1px 1px 0 #fff;-moz-background-clip:padding;-webkit-background-clip:padding-box;-webkit-box-shadow:inset 0 0 1px 1px #fff;-moz-box-shadow:inset 0 0 1px 1px #fff;box-shadow:inset 0 0 1px 1px #fff;padding:8px;overflow:hidden;font-size:12px}.postbit_buttons>a:active,.postbit_buttons>a:hover,.postbit_buttons>a:link,.postbit_buttons>a:visited{display:inline-block;padding:2px 5px;margin:2px;font-size:12px;color:#777;text-shadow:1px 1px 0 #fff}.postbit_buttons>a:hover{color:#666;text-shadow:1px 1px 0 #fff}.postbit_buttons a span:before{content:"";display:inline-block;font-family:FontAwesome;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-right:5px;font-size:12px}.postbit_buttons a.postbit_find span:before{content:"\f002"}.postbit_buttons a.postbit_reputation_add span:before{content:"\f067"}.postbit_buttons a.postbit_email span:before{content:"\f0e0"}.postbit_buttons a.postbit_website span:before{content:"\f0ac"}.postbit_buttons a.postbit_pm span:before{content:"\f199"}.postbit_buttons a.postbit_quote span:before{content:"\f10e"}.postbit_buttons a.postbit_multiquote span:before{content:"\f055"}.postbit_buttons a.postbit_multiquote_on span:before{content:"\f056";color:#db1304}.postbit_buttons a.postbit_edit span:before{content:"\f044"}.postbit_buttons a.postbit_qdelete span:before{content:"\f00d"}.postbit_buttons a.postbit_qrestore span:before{content:"\f067"}.postbit_buttons a.postbit_report span:before{content:"\f0a1"}.postbit_buttons a.postbit_warn span:before{content:"\f0e3"}.postbit_buttons a.postbit_purgespammer span:before{content:"\f071"}.postbit_buttons a.postbit_reply_pm span:before{content:"\f112"}.postbit_buttons a.postbit_reply_all span:before{content:"\f122"}.postbit_buttons a.postbit_forward_pm span:before{content:"\f064"}.postbit_buttons a.postbit_delete_pm span:before{content:"\f00d"}a.button:active,a.button:hover,a.button:link,a.button:visited{background:#b23636;color:#fff;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;display:inline-block;padding:6px 11px;margin:2px 2px 6px;-webkit-transition:all .5s ease;float:center;text-shadow:1px 1px 0 #882929;box-shadow:0 0 0 1px rgba(0,0,0,.25) inset,0 1px 4px rgba(0,0,0,.15);text-decoration:none;font-family:'Droid Sans',sans-serif;font-size:13px;font-style:normal;font-weight:400}a.button.small_button{font-size:12px;margin:0;padding:3px 6px}a.button span{display:inline-block}a.button.new_thread_button span{background-position:0 -340px}a.button.new_reply_button span{background-position:0 -360px}a.button.closed_button span{background-position:0 -380px}a.button.rate_user_button span{background-position:0 -400px}a.button.add_buddy_button span{background-position:0 -440px}a.button.remove_buddy_button span{background-position:0 -480px}a.button.add_ignore_button span{background-position:0 -460px}a.button.remove_ignore_button span{background-position:0 -500px}a.button.report_user_button span{background-position:0 -520px}.quick_jump{background:url(images/jump.png) 0 no-repeat;width:13px;height:13px;padding-left:13px;margin-top:-3px;border:none}.pollbar{background:url(images/pollbar.png) top left repeat-x;border:1px solid #3f3f3f;height:10px}.pollbar .percent{display:none}.posticons_label{white-space:nowrap}.ie6{position:absolute}.ie6.top-right{right:auto;bottom:auto;left:expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );top:expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' )}.ie6.top-left{left:expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );top:expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' )}.ie6.bottom-right{left:expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );top:expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' )}.ie6.bottom-left{left:expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );top:expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' )}.ie6.center{left:expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );top:expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );width:100%}.jGrowl{z-index:9999;color:#fff;font-size:12px;position:fixed}.jGrowl.top-left{left:0;top:0}.jGrowl.top-right{right:0;top:0}.jGrowl.bottom-left{left:0;bottom:0}.jGrowl.bottom-right{right:0;bottom:0}.jGrowl.center{top:0;width:50%;left:25%}.center .jGrowl-closer,.center .jGrowl-notification{margin-left:auto;margin-right:auto}.jGrowl .jGrowl-closer,.jGrowl .jGrowl-notification{color:#fff;background-color:#000;opacity:.85;zoom:1;width:235px;padding:10px;font-family:Tahoma,Arial,Helvetica,sans-serif;font-size:1em;text-align:left;display:none;border-radius:5px;margin:10px}.jGrowl .jGrowl-notification{min-height:40px}.jGrowl .jGrowl-notification .jGrowl-header{font-weight:700;font-size:.85em}.jGrowl .jGrowl-notification .jGrowl-close{z-index:99;float:right;font-weight:700;font-size:1em;cursor:pointer}.jGrowl .jGrowl-closer{padding-top:4px;padding-bottom:4px;cursor:pointer;font-size:.9em;font-weight:700;text-align:center}@media print{.jGrowl{display:none}}.modal{background:#fff;width:450px;display:none;text-align:left;-webkit-border-radius:8px;-moz-border-radius:8px;-o-border-radius:8px;-ms-border-radius:8px;border-radius:8px;-webkit-box-shadow:0 0 40px #000;-moz-box-shadow:0 0 40px #000;-o-box-shadow:0 0 40px #000;-ms-box-shadow:0 0 40px #000;box-shadow:0 0 40px #000;border:8px solid #22242d;z-index:99}.modal a.close-modal{background:url(images/close.png) no-repeat;width:30px;position:absolute;top:-6.5px;right:-6.5px;display:block;height:30px;text-indent:-9999px}.modal-spinner{display:none;width:64px;height:64px;position:fixed;top:50%;left:50%;margin-right:-32px;margin-top:-32px;background:url(images/spinner_big.gif) center center no-repeat;-webkit-border-radius:8px;-moz-border-radius:8px;-o-border-radius:8px;-ms-border-radius:8px;border-radius:8px}/*! jQuery-Impromptu - v5.2.4 - 2014-05-26
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2014 Trent Richardson; Licensed MIT */.jqifade{position:absolute;background-color:#777}div.jqi{width:400px;max-width:90%;font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;position:absolute;background-color:#fff;font-size:11px;text-align:left;border:1px solid #eee;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;padding:7px}div.jqi .jqiclose{position:absolute;top:4px;right:-2px;width:18px;cursor:default;color:#bbb;font-weight:700}div.jqi .jqistate{background-color:#fff}div.jqi .jqititle{padding:5px 10px;font-size:16px;line-height:20px;border-bottom:1px solid #eee}div.jqi .jqimessage{padding:10px;line-height:20px;color:#444}div.jqi .jqibuttons{text-align:right;margin:0 -7px -7px;border-top:1px solid #ccc;background-color:#fff;border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;-webkit-border-radius:0 0 6px 6px}div.jqi .jqibuttons button{margin:0;padding:15px 20px;background-color:#fff;border:none;border-left:1px solid #e4e4e4;color:#fff;font-weight:700;font-size:12px}div.jqi .jqibuttons button.jqidefaultbutton{color:#000}div.jqi .jqibuttons button:focus,div.jqi .jqibuttons button:hover{color:#000;outline:0}.jqiwarning .jqi .jqibuttons{background-color:#fff}div.jqi .jqiparentstate::after{background-color:#777;opacity:.6;content:'';position:absolute;top:0;left:0;bottom:0;right:0;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px}div.jqi .jqisubstate{position:absolute;top:0;left:20%;width:60%;padding:7px;border:1px solid #eee;border-top:none;border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;-webkit-border-radius:0 0 6px 6px}div.jqi .jqisubstate .jqibuttons button{padding:10px 18px}.jqi .jqiarrow{position:absolute;height:0;width:0;line-height:0;font-size:0;border:10px solid transparent}.jqi .jqiarrowtl{left:10px;top:-20px;border-bottom-color:#fff}.jqi .jqiarrowtc{left:50%;top:-20px;border-bottom-color:#fff;margin-left:-10px}.jqi .jqiarrowtr{right:10px;top:-20px;border-bottom-color:#fff}.jqi .jqiarrowbl{left:10px;bottom:-20px;border-top-color:#fff}.jqi .jqiarrowbc{left:50%;bottom:-20px;border-top-color:#fff;margin-left:-10px}.jqi .jqiarrowbr{right:10px;bottom:-20px;border-top-color:#fff}.jqi .jqiarrowlt{left:-20px;top:10px;border-right-color:#fff}.jqi .jqiarrowlm{left:-20px;top:50%;border-right-color:#fff;margin-top:-10px}.jqi .jqiarrowlb{left:-20px;bottom:10px;border-right-color:#fff}.jqi .jqiarrowrt{right:-20px;top:10px;border-left-color:#fff}.jqi .jqiarrowrm{right:-20px;top:50%;border-left-color:#fff;margin-top:-10px}.jqi .jqiarrowrb{right:-20px;bottom:10px;border-left-color:#fff}]]></stylesheet>
+    <templates><template name="footer" version="1809"><![CDATA[
+<br>
+<div id="footer">
+    <div class="upper">
+        <div class="wrapper">
+            {$lang_select} {$theme_select}
+            <ul class="menu bottom_links" style="margin-top:5px">
+                <li><a href="{$mybb->settings['bburl']}/misc.php?action=syndication"><i style="font-size:16px" class="fa fa-rss fa-fw"></i> &nbsp;</a></li>
+                <li><a href="#top">{$lang->bottomlinks_returntop} &nbsp;</a></li>
+                <li><a href="<archive_url>">Lite mode &nbsp;</a></li>
+                {$contact_us}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lower">
+    <div class="wrapper"><span id="copyright">
+			
+		<cfb></cfb></span></div>
+</div>
+
+{$task_image}
+
+{$auto_dst_detection}
+<br>
+<div align="center"><a href="http://www.mybb.com" target="_blank">Forum software by &copy; MyBB {$mybbversion}</a><i style="font-size:9px" class="fa fa-chevron-right fa-fw"></i><a href="http://iandrew.org">Theme &copy; iAndrew 2016</a><br><a href="http://clwo.eu/contact.php">Hosted by CLWO</a>
+    <debugstuff>
+</debugstuff></div>
+
+<div id="standalone"><iframe width="1280" height="720" src="https://www.youtube.com/embed/hzkF3HbptjE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+]]></template><template name="forumbit_depth1_cat" version="1809"><![CDATA[
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+    <thead>
+        <tr>
+            <td class="thead{$expthead}" colspan="5">
+                <div class="expcolimage"><img src="{$theme['imgdir']}/{$expcolimage}" id="cat_{$forum['fid']}_img" class="expander" alt="{$expaltext}" title="{$expaltext}"></div>
+                <div><strong><a href="{$forum_url}">{$forum['name']}</a></strong><br>
+                    <div class="smalltext">{$forum['description']}</div>
+                </div>
+            </td>
+        </tr>
+    </thead>
+    <tbody style="" id="cat_{$forum['fid']}_e">
+        {$sub_forums}
+    </tbody>
+</table><br>
+]]></template><template name="forumbit_depth2_cat" version="1809"><![CDATA[
+<tr>
+    <td class="{$bgcolor}" align="center" width="1"><span class="float_right forum_status forum_{$lightbulb['folder']} ajax_mark_read" title="{$lightbulb['altonoff']}" id="mark_read_{$forum['fid']}"><i class="fa fa-quote-right"></i></span></td>
+    <td class="{$bgcolor}"><strong><a href="{$forum_url}">{$forum['name']}</a></strong>{$forum_viewers_text}
+        <div class="smalltext">{$forum['description']}{$subforums}</div>
+    </td>
+    <td class="{$bgcolor}" align="center" style="white-space:nowrap">{$threads}{$unapproved['unapproved_threads']}</td>
+    <td class="{$bgcolor}" align="center" style="white-space:nowrap">{$posts}{$unapproved['unapproved_posts']}</td>
+    <td class="{$bgcolor}" align="right" style="white-space:nowrap">{$lastpost}</td>
+</tr>
+]]></template><template name="forumbit_depth2_forum" version="1809"><![CDATA[
+<tr style="background-color:#f1f1f1">
+    <td>
+        <table cellspacing="0" cellpadding="4" border="0" align="left" width="100%" class="backtrow" style="font-size:14px;position:relative">
+            <tbody>
+                <tr>
+                    <td align="center" valign="middle" width="1">
+                        <div class="forum_status forum_{$lightbulb['folder']} ajax_mark_read" title="{$lightbulb['altonoff']}" id="mark_read_{$forum['fid']}"><i class="fa fa-quote-right"></i></div>
+                    </td>
+                    <td valign="middle">
+                        <strong><a href="{$forum_url}"><strong>{$forum['name']}</strong></a>
+                        </strong>
+                        <div class="smalltext">{$forum_viewers_text} {$forum['description']} {$modlist} {$subforums}</div>
+                    </td>
+                    <td align="right" valign="midle" style="white-space:nowrap">
+                        <font color="#b4b4b4">{$threads}{$unapproved['unapproved_threads']} </font> &nbsp; &nbsp; <br>
+                        <font color="#b4b4b4">Topics</font> &nbsp; &nbsp;
+                    </td>
+                    <td align="left" width="25%" valign="middle" style="white-space:nowrap">{$lastpost}</td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+]]></template><template name="forumbit_depth3_statusicon" version="1809"><![CDATA[
+<div title="{$lightbulb['altonoff']}" class="subforumicon subforum_{$lightbulb['folder']} ajax_mark_read" id="mark_read_{$forum['fid']}">
+  <i style="font-size:14px" class="fa fa-folder-o"></i>
+</div>
+]]></template><template name="forumbit_subforums" version="1809"><![CDATA[
+<br> {$sub_forums}]]></template><template name="forumdisplay" version="1809"><![CDATA[
+<html>
+
+<head>
+    <title>{$mybb->settings['bbname']} - {$foruminfo['name']} </title>
+    {$headerinclude} {$rssdiscovery}
+    <script type="text/javascript">lang.no_new_posts="{$lang->no_new_posts}",lang.click_mark_read="{$lang->click_mark_read}",lang.inline_edit_description="{$lang->inline_edit_description}",lang.post_fetch_error="{$lang->post_fetch_error}"</script>
+    
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/jeditable/jeditable.min.js"></script>
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_edit.js?ver=1804"></script>
+</head>
+
+<body>
+    {$header} {$moderatedby} {$rules} {$subforums} {$threadslist} {$usersbrowsing} {$footer}
+</body>
+
+</html>
+]]></template><template name="forumdisplay_subforums" version="1809"><![CDATA[
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+    <tr>
+        <td class="thead" colspan="5" align="center"><strong>{$lang->sub_forums_in}</strong></td>
+    </tr>
+
+    {$forums}
+</table><br>
+]]></template><template name="forumdisplay_threadlist" version="1809"><![CDATA[
+<div class="float_left">
+    {$multipage}
+</div>
+<div class="float_right">
+    {$newthread}
+</div>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder clear">
+    <tr>
+        <td class="thead" colspan="{$colspan}">
+            <div class="float_right"><span class="smalltext"><strong><a href="misc.php?action=markread&amp;fid={$fid}{$post_code_string}">{$lang->markforum_read}</a> | <a href="usercp2.php?action={$add_remove_subscription}subscription&amp;type=forum&amp;fid={$fid}&amp;my_post_key={$mybb->post_code}">{$add_remove_subscription_text}</a>{$clearstoredpass}</strong></span></div>
+            <div><strong>{$foruminfo['name']}</strong></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="tcat" colspan="3" width="66%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=subject&amp;order=asc">{$lang->thread}</a> {$orderarrow['subject']} / <a href="{$sorturl}&amp;sortby=starter&amp;order=asc">{$lang->author}</a> {$orderarrow['starter']}</strong></span></td>
+        <td class="tcat" align="center" width="7%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=replies&amp;order=desc">{$lang->replies}</a> {$orderarrow['replies']}</strong></span></td>
+        <td class="tcat" align="center" width="7%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=views&amp;order=desc">{$lang->views}</a> {$orderarrow['views']}</strong></span></td>
+        {$ratingcol}
+        <td class="tcat" align="right" width="20%"><span class="smalltext"><strong><a href="{$sorturl}&amp;sortby=lastpost&amp;order=desc">{$lang->lastpost}</a> {$orderarrow['lastpost']}</strong></span></td>
+        {$inlinemodcol}
+    </tr>
+    {$selectall} {$announcementlist} {$threads}
+    <tr>
+        <td class="tfoot" align="right" colspan="{$colspan}">
+            <form action="forumdisplay.php" method="get"><input type="hidden" name="fid" value="{$fid}" /><select name="sortby"><option value="subject"{$sortsel['subject']}>{$lang->sort_by_subject}</option><option value="lastpost"{$sortsel['lastpost']}>{$lang->sort_by_lastpost}</option><option value="starter"{$sortsel['starter']}>{$lang->sort_by_starter}</option><option value="started"{$sortsel['started']}>{$lang->sort_by_started}</option>
+					{$ratingsort}
+					<option value="replies"{$sortsel['replies']}>{$lang->sort_by_replies}</option><option value="views"{$sortsel['views']}>{$lang->sort_by_views}</option></select><select name="order"><option value="asc"{$ordersel['asc']}>{$lang->sort_order_asc}</option><option value="desc"{$ordersel['desc']}>{$lang->sort_order_desc}</option></select><select name="datecut"><option value="1"{$datecutsel['1']}>{$lang->datelimit_1day}</option><option value="5"{$datecutsel['5']}>{$lang->datelimit_5days}</option><option value="10"{$datecutsel['10']}>{$lang->datelimit_10days}</option><option value="20"{$datecutsel['20']}>{$lang->datelimit_20days}</option><option value="50"{$datecutsel['50']}>{$lang->datelimit_50days}</option><option value="75"{$datecutsel['75']}>{$lang->datelimit_75days}</option><option value="100"{$datecutsel['100']}>{$lang->datelimit_100days}</option><option value="365"{$datecutsel['365']}>{$lang->datelimit_lastyear}</option><option value="9999"{$datecutsel['9999']}>{$lang->datelimit_beginning}</option></select> {$prefixselect} {$gobutton}
+            </form>
+        </td>
+    </tr>
+</table>
+<div class="float_left">
+    {$multipage}
+</div>
+<div class="float_right" style="margin-top: 4px;">
+    {$newthread}
+</div><br class="clear" /><br />
+<div class="float_left">
+    <div class="float_left">
+        <dl class="thread_legend smalltext">
+            <dd><span class="thread_status newfolder" title="{$lang->new_thread}">&nbsp;</span> {$lang->new_thread}</dd>
+            <dd><span class="thread_status newhotfolder" title="{$lang->new_hot_thread}">&nbsp;</span> {$lang->new_hot_thread}</dd>
+            <dd><span class="thread_status hotfolder" title="{$lang->hot_thread}">&nbsp;</span> {$lang->hot_thread}</dd>
+        </dl>
+    </div>
+    <div class="float_left">
+        <dl class="thread_legend smalltext">
+            <dd><span class="thread_status folder" title="{$lang->no_new_thread}">&nbsp;</span> {$lang->no_new_thread}</dd>
+            <dd><span class="thread_status dot_folder" title="{$lang->posts_by_you}">&nbsp;</span> {$lang->posts_by_you}</dd>
+            <dd><span class="thread_status lockfolder" title="{$lang->locked_thread}">&nbsp;</span> {$lang->locked_thread}</dd>
+        </dl>
+    </div><br class="clear" /></div>
+<div class="float_right" style="text-align: right;">
+    {$inlinemod} {$forumjump}
+</div><br class="clear" /> {$inline_edit_js}
+]]></template><template name="forumdisplay_usersbrowsing" version="1809"><![CDATA[
+<br>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+    <tr>
+        <td class="thead"><strong>{$lang->users_browsing_forum} </strong></td>
+    </tr>
+    <tr>
+        <td class="trow1"><span class="smalltext"> {$onlinemembers}{$onlinesep}{$invisonline}{$onlinesep2}{$guestsonline}</span></td>
+    </tr>
+</table><br>
+]]></template><template name="header" version="1809"><![CDATA[
+<script>!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https://www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-61415223-1","auto"),ga("send","pageview")</script>
+<div class="box topforum"><i class="fa fa-angle-double-up fa-1x"></i></div>
+<div id="mainwidth">
+    <style>#cssmenu ul ul li:hover>a{background:#333;color:#fff}#cssmenu ul ul li a{border-bottom-color:#333;color:#fff}ul.nav li.dropdown:hover>ul.dropdown-menu{display:block}.dropdown-toggle:after,a.menu:after{content:none}</style>
+    <div id="cssmenu">
+        <ul>
+            <li><a href="https://clwo.eu/portal.php" original-title=""><i class="fa fa-home fa-fw"></i> Home</a></li>
+            <li><a href="https://clwo.eu/index.php"><i class="fa fa-globe fa-fw"></i>Forums</a></li>
+            <li><a href="https://clwo.eu/showthread.php?tid=6"><i class="fa fa-book fa-fw"></i>General Rules</a></li>
+            <li><a href="https://clwo.eu/jailbreak/admin/view-blacklist.php"><i class="fa fa-gavel fa-fw"></i> Community bans</a></li>
+            
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fort-awesome fa-fw"></i> Jailbreak portal</a><span class="caret"></span>
+                <ul class="dropdown-menu" style="background-color:#333;min-width:175px">
+                    <li><a href="https://clwo.eu/thread-562.html"><i class="fa fa-book fa-fw"></i>Jailbreak rules</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/profile.php"><i class="fa fa-user" aria-hidden="true"></i>Player profile</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/livechat.php"><i class="fa fa-comment" aria-hidden="true"></i>Live chat</a></li>
+                    <li><a href="https://jailbreakexternal.clwo.eu/donate/"><i class="fa fa-heart fa-fw"></i>Donations</a></li>
+                    <li><a href="https://clwo.eu/sourcebans"><i class="fa fa-gavel fa-fw"></i>Sourcebans</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/staff_redi.php"><i class="fa fa-group fa-fw"></i>Staff</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/images/playtime/index.php"><i class="fa fa-barcode fa-fw"></i>Badge generator</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/alts.php"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Alt accounts</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/chatlogs.php"><i class="fa fa-comments fa-fw"></i>Chatlogs</a></li>
+                    <li><a href="https://clwo.eu/jailbreak/admin/index.php"><i class="fa fa-rocket" aria-hidden="true"></i>Admin center</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="http://ttt.clwo.eu"><i class="fa fa-gavel fa-fw"></i>TTT Bans</a></li>
+            <li id="nav-search"><a href="{$mybb->settings['bburl']}/search.php"><span> Search</span></a></li>
+        </ul>
+    </div>
+    <table width="100%" cellspacing="0" cellpadding="{$theme['tablespace']}" border="0">
+        <tr>
+            <td valign="top">
+                <div class="float_left" id="logo"><a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}"></a></div>
+</td></tr></table></div>
+
+<td>&nbsp;</td>
+<td valign="top">
+    <div class="float_right"> {$welcomeblock}</div>
+</td>
+
+
+<div id="container">
+    <div id="header">
+        <div id="content">
+            <div class="wrapper">
+                <navigation><br> {$pm_notice} {$bannedwarning} {$bbclosedwarning} {$unreadreports} {$pending_joinrequests}
+                    <br>
+                    <script>function get_server(){console.log("Getting server status"),$.getJSON("https://clwo.eu/jailbreak/api/v1/server/info.php",function(e){return jSonDone=e,void 0!==(CLWO_JB=jSonDone.data)?(jsontime=new Date(1e3*jSonDone.stats.time),$("#server_status_text").html("<a style='color:#66CC33' href='steam://connect/jb.clwo.eu'>Online <i style='' class='fa fa-check-circle'></i></a> "+CLWO_JB.numberOfPlayers+"/"+CLWO_JB.maxPlayers+" players on "+CLWO_JB.mapName+"<br><span id='server_status_extra'>#waiting_for_data#</span><br/><a href='steam://connect/jb.clwo.eu'><i style='' class='fa fa-hand-o-right'></i> Click here to join the jailbreak server <i style='' class='fa fa-hand-o-left'></i></a>").fadeIn(3e3),void get_extra()):void $("#server_status_text").html("<a style='color:#990000' href='#'>Offline <i style='' class='fa fa-exclamation'></i></a>").fadeIn(3e3)})}function get_extra(){$.getJSON("https://clwo.eu/jailbreak/api/v1/server/rules.php",function(e){void 0!==e.data.Warden&&$("#server_status_extra").text("Staff: "+e.data.Staff_online+" - Warden: '"+e.data.Warden+"'").fadeIn(3e3)})}var jSonDone,CLWO_JB,jsontime;get_server(),setInterval(get_server,7e3),setInterval(get_extra,7e3)</script>
+                    
+                    <div class="pm_alert" style="background:#333">
+                        <div id="server_status_text"></div>
+                        <div id="clwo_server_network"></div>
+                    </div>
+                    <script id="tpl_clwo_server_network" type="text/template">
+                        {{#each this}} {{#if_eq this.ServerID 1}} {{else}} {{ShortName}} {{qrd.info.numberOfPlayers}}/{{qrd.info.maxPlayers}} - {{ qrd.info.mapName }} <a href="steam://connect/{{Prefix}}.clwo.eu/{{Port}}"><i class="fa fa-play fa-fw" aria-hidden="true"></i></a> {{/if_eq}} {{/each}}
+
+                    </script>
+                    <script>function GetNetwork(){$.ajax({url:"https://clwo.eu/jailbreak/api/v2/networkquery.php",type:"GET",timeout:3500}).done(function(e,t,r){var n=$(tpl_clwo_server_network).html(),o=Handlebars.compile(n)(e.data);$("#clwo_server_network").html(o)})}$(document).ready(function(){setInterval(GetNetwork,5e3);GetNetwork()}),Handlebars.registerHelper("if_eq",function(e,t,r){return e==t?r.fn(this):r.inverse(this)})</script>
+</navigation></div></div></div></div>]]></template><template name="headerinclude" version="1809"><![CDATA[
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php">
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0">
+<meta http-equiv="Content-Type" content="text/html; charset={$charset}">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1806"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1806"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1807"></script>
+<script type="text/javascript" src="images/vienna/bootstrap.min.js"></script>
+<script type="text/javascript" src="images/vienna/main.js"></script>
+<script type="text/javascript" src="images/vienna/jquery.tipsy.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+
+<meta property="twitter:image" content="https://clwo.eu/mediakit/clwo_avatar_steam.png">
+<meta property="og:image" content="https://clwo.eu/mediakit/clwo_avatar_steam.png">
+<meta property="og:image:secure_url" content="https://clwo.eu/mediakit/clwo_avatar_steam.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="184">
+<meta property="og:image:height" content="184">
+<link type="text/css" rel="stylesheet" href="cache/themes/global/thanks/thx.css">
+<script type="text/javascript" src="jscripts/thx.js"></script>
+{$stylesheets} {$portalreadmore_css}
+<script type="text/javascript">lang.unknown_error="{$lang->unknown_error}",lang.select2_match="{$lang->select2_match}",lang.select2_matches="{$lang->select2_matches}",lang.select2_nomatches="{$lang->select2_nomatches}",lang.select2_inputtooshort_single="{$lang->select2_inputtooshort_single}",lang.select2_inputtooshort_plural="{$lang->select2_inputtooshort_plural}",lang.select2_inputtoolong_single="{$lang->select2_inputtoolong_single}",lang.select2_inputtoolong_plural="{$lang->select2_inputtoolong_plural}",lang.select2_selectiontoobig_single="{$lang->select2_selectiontoobig_single}",lang.select2_selectiontoobig_plural="{$lang->select2_selectiontoobig_plural}",lang.select2_loadmore="{$lang->select2_loadmore}",lang.select2_searching="{$lang->select2_searching}";var cookieDomain="{$mybb->settings['cookiedomain']}",cookiePath="{$mybb->settings['cookiepath']}",cookiePrefix="{$mybb->settings['cookieprefix']}",deleteevent_confirm="{$lang->deleteevent_confirm}",removeattach_confirm="{$lang->removeattach_confirm}",loading_text="{$lang->ajax_loading}",saving_changes="{$lang->saving_changes}",use_xmlhttprequest="{$mybb->settings['use_xmlhttprequest']}",my_post_key="{$mybb->post_code}",rootpath="{$mybb->settings['bburl']}",imagepath="{$theme['imgdir']}",yes_confirm="{$lang->yes}",no_confirm="{$lang->no}",MyBBEditor=null,spinner_image="{$theme['imgdir']}/spinner.gif",spinner="<img src='"+spinner_image+"' alt='' />",modal_zindex=9999</script>
+<script type="text/javascript">$(function(){$("a").tipsy({gravity:$.fn.tipsy.autoNS,fade:!0}),$("title").tipsy({gravity:$.fn.tipsy.autoNS,fade:!0}),$("img").tipsy({gravity:$.fn.tipsy.autoNS,fade:!0}),$("i").tipsy({gravity:$.fn.tipsy.autoNS,fade:!0}),$("span").tipsy({gravity:$.fn.tipsy.autoNS,fade:!0}),$("div").tipsy({gravity:$.fn.tipsy.autoNS,fade:!0})})</script>
+<script type="text/javascript">jQuery(document).ready(function(){jQuery(window).scroll(function(){jQuery(this).scrollTop()>100?jQuery(".topforum").fadeIn(250):jQuery(".topforum").fadeOut(250)}),jQuery(".topforum").click(function(o){return o.preventDefault(),jQuery("html, body").animate({scrollTop:0},600),!1})})</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cheet.js/0.3.3/cheet.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.9/jquery.popupoverlay.js"></script>
+<script>cheet("↑ ↑ ↓ ↓ ← → ← → b a",function(){$("#standalone").popup("show")}),$(document).ready(function(){$("#standalone").popup({color:"white",opacity:1,transition:"0.3s",scrolllock:!0})})</script>
+<style>#standalone{transform:scale(.8)}.popup_visible #standalone{transform:scale(1)}</style><noscript><style>#standalone{display:none}</style></noscript>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js" integrity="sha256-QHhbHxeq7BcXuPYY/Ag1hUAVg4MCgA2HPZRRwOr/QTg=" crossorigin="anonymous"></script>
+]]></template><template name="header_welcomeblock_guest" version="1809"><![CDATA[
+<div class="float_right" style="margin-top:20px"><a class="button4" href="{$mybb->settings['bburl']}/member.php?action=login" onclick='return $("#quick_login").modal({fadeDuration:250,keepelement:!0}),!1'>Sign in </a> &nbsp;
+
+    <a class="button5" href="{$mybb->settings['bburl']}/member.php?action=register" title="Not a member yet? why not sign up and start posting."><i class="fa fa-check-circle-o fa-fw"></i> Create account </a></div>
+<div class="modal" id="quick_login" style="display:none">
+    <form method="post" action="{$mybb->settings['bburl']}/member.php"><input name="action" type="hidden" value="do_login"><input name="url" type="hidden" value=""><input name="quick_login" type="hidden" value="1">
+        <table width="100%" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" border="0" class="tborder" style="padding:20px">
+            <tr>
+                <td class="thead" colspan="2"><strong>{$lang->login}</strong></td>
+            </tr>
+            <tr>
+                <td class="trow1" width="25%"><strong>{$login_username}</strong></td>
+                <td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus"></td>
+            </tr>
+            <tr>
+                <td class="trow2"><strong>{$lang->password}</strong></td>
+                <td class="trow2"><input name="quick_password" id="quick_login_password" type="password" value="" class="textbox"><a href="{$mybb->settings['bburl']}/member.php?action=lostpw" class="lost_password">{$lang->lost_password}</a></td>
+            </tr>
+            <tr>
+                <td class="trow1">&nbsp;</td>
+                <td class="trow1 remember_me"><input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked"><label for="quick_login_remember">{$lang->remember_me}</label></td>
+            </tr>
+            <tr>
+                <td class="trow2" colspan="2">
+                    <div align="center"><input name="submit" type="submit" class="button" value="{$lang->login}"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script type="text/javascript">$("#quick_login input[name='url']").val($(location).attr("href"))</script>
+]]></template><template name="header_welcomeblock_member" version="1809"><![CDATA[
+<table class="trowm" width="100%" cellspacing="0" cellpadding="{$theme['tablespace']}" border="0" align="center">
+    <tr>
+        <td>
+            <div style="margin-top:35px"><span style="color:#fff">Welcome Back, </span><span class="dropdown"><a class="white" data-toggle="dropdown" href="#">
+{$mybb->user['username']} <i style="font-size:9px" class="fa fa-chevron-down fa-fw"></i></a> &nbsp;
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php"> User Panel </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=profile"> Edit Profile </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=options"> Edit Options </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=editsig"> Edit Signature </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=editlists"> Friends List </a></li>
+
+{$modcplink}
+{$admincplink}
+ </ul></span><a title="Unread Messages" style="margin-top:5px" href="{$mybb->settings['bburl']}/private.php" id="pm_notification">  {$mybb->user['pms_unread']}  </a> &nbsp;
+                <a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"><span style="color:#fff"> Sign Out</span></a></div></td>
+    </tr>
+</table>
+<script type="text/javascript">$(document).ready(function(){""==$(".header_avatar img",this).attr("src")&&$(".header_avatar img").attr("src","images/vienna/default_avatar.png")})</script>
+]]></template><template name="index" version="1809"><![CDATA[
+<html>
+
+<head>
+    <title>{$mybb->settings['bbname']}</title>
+    {$headerinclude}
+
+    <script type="text/javascript">lang.no_new_posts="{$lang->no_new_posts}",lang.click_mark_read="{$lang->click_mark_read}"</script>
+</head>
+
+<body id="forums">
+    {$header}
+    
+    {$dvz_shoutbox}
+    
+    <div class="side" style="float:right;width:21%">
+        <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+            <tr>
+                <td class="ithead">
+                    <div class="float_left"><strong>Steam group</strong></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="itrow">
+                    <div align="center"><a href="http://steamcommunity.com/groups/ClassyWolves" target="blank"><img src="images/vienna/images.png" style="width:32px;height:32px"></a></div>
+                </td>
+            </tr>
+        </table><br>
+        <script type="text/javascript">jQuery(function(){jQuery(".latestthreads").load("{$mybb->settings['bburl']}/portal.php .latestthreads_portal")})</script>
+        <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+            <tr>
+                <td class="ithead">
+                    <div class="float_left"><strong>Latest activity</strong></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="itrow">
+                    <div class="latestthreads float_left"></div>
+                </td>
+            </tr>
+        </table><br></div>
+    <div class="forum" style="float:left;width:78%">{$forums}</div>
+    {$boardstats}
+    <br class="clear"> {$footer}
+</body>
+
+</html>
+]]></template><template name="index_boardstats" version="1809"><![CDATA[
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+    <thead>
+        <tr>
+            <td class="ithead{$collapsedthead['boardstats']}">
+                <div class="expcolimage">[<a href="online.php">{$lang->complete_list}</a>]</div>
+                <div><strong>{$lang->whos_online}</strong></div>
+            </td>
+        </tr>
+    </thead>
+    <tbody style="" id="boardstats_e">
+        {$whosonline} {$birthdays} {$forumstats}
+
+    </tbody>
+</table><br>
+]]></template><template name="index_stats" version="1809"><![CDATA[
+<tr>
+    <td class="trow1"><span class="smalltext"><span class="boardstats_text">{$stats['numposts']} Replies, </span> &nbsp;
+        <span class="boardstats_text">{$stats['numthreads']} Topics, </span> &nbsp;
+        <span class="boardstats_text">{$stats['numusers']} Users, </span> &nbsp;
+        <span class="boardstats_text">{$recordcount} Most online, </span> &nbsp;
+        <span class="boardstats_stat">{$newestmember} Latest </span></span>
+    </td>
+</tr>
+]]></template><template name="index_whosonline" version="1809"><![CDATA[
+<tr>
+    <td class="trow1"><span class="smalltext">
+        {$lang->online_note}
+        <br>
+        {$onlinemembers}
+        </span>
+    </td>
+</tr>
+]]></template><template name="member_profile" version="1809"><![CDATA[
+<html>
+
+<head>
+    <title>{$mybb->settings['bbname']} - {$lang->profile}</title>
+    {$headerinclude}
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/report.js?ver=1804"></script>
+    <script>$(document).ready(function(){$("ul.tabs li").click(function(){var t=$(this).attr("data-tab");$("ul.tabs li").removeClass("current"),$(".tab-content2").removeClass("current"),$(this).addClass("current"),$("#"+t).addClass("current")})})</script>
+    <style>.container2{margin:0 auto}ul.tabs{margin:0;padding:0;list-style:none}ul.tabs li{background:0 0;color:#222;display:inline-block;padding:10px 15px;cursor:pointer}ul.tabs li.current{background:#ededed;color:#222}.tab-content2{display:none;background:#ededed;padding:15px}.tab-content2.current{display:inherit}</style>
+</head>
+
+<body>
+    {$header}
+    <div class="float_right" style="text-align:center">{$buddy_options}{$ignore_options}{$report_options}</div><br><br>
+    <fieldset>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td width="75%"><span class="largetext"><strong>{$formattedname}</strong></span><br><span class="smalltext">
+					({$usertitle})<br>
+					{$groupimage}
+					{$userstars}<br><br><strong>{$lang->registration_date}</strong> {$memregdate}<br><strong>{$lang->date_of_birth}</strong> {$membday} {$membdayage}<br><strong>{$lang->local_time}</strong> {$localtime}<br><strong>{$lang->postbit_status}</strong> {$online_status}
+				</span></td>
+                <td width="25%" align="right" valign="middle">{$avatar}</td>
+            </tr>
+        </table>
+    </fieldset><br>
+    <div class="container2">
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1"> Forum info</li>
+            <li class="tab-link" data-tab="tab-2">Contact details</li>
+            <li class="tab-link" data-tab="tab-3">Profile</li>
+            <li class="tab-link" data-tab="tab-4">Signature</li>
+            <li class="tab-link" data-tab="tab-5">Moderate</li>
+        </ul>
+        <div id="tab-1" class="tab-content2 current">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                    <td width="50%" valign="top">
+                        <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+                            <tr>
+                                <td colspan="2" class="thead"><strong>{$lang->users_forum_info}</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="trow1" style="width:30%"><strong>{$lang->joined}</strong></td>
+                                <td class="trow1">{$memregdate}</td>
+                            </tr>
+                            <tr>
+                                <td class="trow2"><strong>{$lang->lastvisit}</strong></td>
+                                <td class="trow2">{$memlastvisitdate}</td>
+                            </tr>
+                            <tr>
+                                <td class="trow1"><strong>{$lang->total_posts}</strong></td>
+                                <td class="trow1">{$memprofile['postnum']} ({$lang->ppd_percent_total}){$findposts}</td>
+                            </tr>
+                            <tr>
+                                <td class="trow2"><strong>{$lang->total_threads}</strong></td>
+                                <td class="trow2">{$memprofile['threadnum']} ({$lang->tpd_percent_total}){$findthreads}</td>
+                            </tr>
+                            <tr>
+                                <td class="trow1"><strong>{$lang->timeonline}</strong></td>
+                                <td class="trow1">{$timeonline}</td>
+                            </tr>
+                            {$referrals} {$reputation} {$warning_level}
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="tab-2" class="tab-content2">
+            {$contact_details}
+        </div>
+        <div id="tab-3" class="tab-content2">
+            {$profilefields}
+        </div>
+        <div id="tab-4" class="tab-content2">
+            {$signature}
+        </div>
+        <div id="tab-5" class="tab-content2">
+            {$modoptions}{$adminoptions}
+        </div>
+    </div>
+
+
+
+    {$footer}
+</body>
+
+</html>
+]]></template><template name="member_profile_addremove" version="1809"><![CDATA[
+<a style="padding:8px 10px" href="{$add_remove_options['url']}" class="button small_button {$add_remove_options['class']}">
+  <span><i style="font-size:13px" class="fa fa-user fa-fw"></i>  {$add_remove_options['lang']}</span>
+</a>
+]]></template><template name="member_register" version="1809"><![CDATA[
+<html>
+
+<head>
+    <title>{$mybb->settings['bbname']} - {$lang->registration}</title>
+    {$headerinclude}
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/validate/jquery.validate.min.js?ver=1804"></script>
+</head>
+
+<body>
+    {$header}
+    <form action="member.php" method="post" id="registration_form"><input type="text" style="visibility:hidden" value="" name="regcheck1"><input type="text" style="visibility:hidden" value="true" name="regcheck2"> {$regerrors}
+        <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+            <tr>
+                <td class="thead" colspan="2"><strong>{$lang->registration}</strong></td>
+            </tr>
+            <tr>
+                <td width="50%" class="trow1" valign="top">
+                    <fieldset class="trow2">
+                        <legend><strong>{$lang->account_details}</strong></legend>
+                        <table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+                            <tr>
+                                <td colspan="2"><span class="smalltext"><label for="username">{$lang->username}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" class="textbox" name="username" id="username" style="width:100%" value="{$username}"></td>
+                            </tr>
+                            {$passboxes}
+                            <tr>
+                                <td width="50%" valign="top"><span class="smalltext"><label for="email">{$lang->email}</label></span></td>
+                                <td width="50%" valign="top"><span class="smalltext"><label for="email2">{$lang->confirm_email}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td width="50%" valign="top"><input type="text" class="textbox" name="email" id="email" style="width:100%" maxlength="50" value="{$email}"></td>
+                                <td width="50%" valign="top"><input type="text" class="textbox" name="email2" id="email2" style="width:100%" maxlength="50" value="{$email2}"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="display:none" id="email_status">&nbsp;</td>
+                            </tr>
+                            {$hiddencaptcha}
+                        </table>
+                    </fieldset>
+                    {$requiredfields} {$customfields} {$referrer} {$regimage} {$questionbox}
+                </td>
+                <td width="50%" class="trow1" valign="top">
+                    <fieldset class="trow2">
+                        <legend><strong>{$lang->account_prefs}</strong></legend>
+                        <table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+                            <tr>
+                                <td valign="top" width="1"><input type="checkbox" class="checkbox" name="allownotices" id="allownotices" value="1" {$allownoticescheck}></td>
+                                <td valign="top"><span class="smalltext"><label for="allownotices">{$lang->allow_notices}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="1"><input type="checkbox" class="checkbox" name="hideemail" id="hideemail" value="1" {$hideemailcheck}></td>
+                                <td valign="top"><span class="smalltext"><label for="hideemail">{$lang->hide_email}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="1"><input type="checkbox" class="checkbox" name="receivepms" id="receivepms" value="1" {$receivepmscheck}></td>
+                                <td valign="top"><span class="smalltext"><label for="receivepms">{$lang->receive_pms}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="1"><input type="checkbox" class="checkbox" name="pmnotice" id="pmnotice" value="1" {$pmnoticecheck}></td>
+                                <td valign="top"><span class="smalltext"><label for="pmnotice">{$lang->pm_notice}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="1"><input type="checkbox" class="checkbox" name="pmnotify" id="pmnotify" value="1" {$pmnotifycheck}></td>
+                                <td valign="top"><span class="smalltext"><label for="pmnotify">{$lang->email_notify_newpm}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="1"><input type="checkbox" class="checkbox" name="invisible" id="invisible" value="1" {$invisiblecheck}></td>
+                                <td valign="top"><span class="smalltext"><label for="invisible">{$lang->invisible_mode}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><span class="smalltext"><label for="subscriptionmethod">{$lang->subscription_method}</label></span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><select name="subscriptionmethod" id="subscriptionmethod"><option value="0" {$no_auto_subscribe_selected}>{$lang->no_auto_subscribe}</option><option value="1" {$no_subscribe_selected}>{$lang->no_subscribe}</option><option value="2" {$instant_email_subscribe_selected}>{$lang->instant_email_subscribe}</option><option value="3" {$instant_pm_subscribe_selected}>{$lang->instant_pm_subscribe}</option></select></td>
+                            </tr>
+                        </table>
+                    </fieldset><br>
+                    <fieldset class="trow2">
+                        <legend><strong><label for="timezone">{$lang->time_offset}</label></strong></legend>
+                        <table cellspacing="0" cellpadding="{$theme['tablespace']}" width="100%">
+                            <tr>
+                                <td><span class="smalltext">{$lang->time_offset_desc}</span></td>
+                            </tr>
+                            <tr>
+                                <td>{$tzselect}</td>
+                            </tr>
+                            <tr>
+                                <td><span class="smalltext">{$lang->dst_correction}</span></td>
+                            </tr>
+                            <tr>
+                                <td><select name="dstcorrection"><option value="2" {$dst_auto_selected}>{$lang->dst_correction_auto}</option><option value="1" {$dst_enabled_selected}>{$lang->dst_correction_enabled}</option><option value="0" {$dst_disabled_selected}>{$lang->dst_correction_disabled}</option></select></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    {$boardlanguage}
+                </td>
+            </tr>
+        </table><br>
+        <div align="center"><input type="hidden" name="regtime" value="{$time}"><input type="hidden" name="step" value="registration"><input type="hidden" name="action" value="do_register"><input type="submit" class="button" name="regsubmit" value="{$lang->submit_registration}"></div>
+    </form>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#registration_form").validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: {
+                            $mybb - > settings['minnamelength']
+                        },
+                        maxlength: {
+                            $mybb - > settings['maxnamelength']
+                        },
+                        remote: {
+                            url: "xmlhttp.php?action=username_availability",
+                            type: "post",
+                            dataType: "json",
+                            data: {
+                                my_post_key: my_post_key
+                            },
+                        },
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                    email2: {
+                        required: true,
+                        email: true,
+                        equalTo: "#email"
+                    },
+                },
+                messages: {
+                    username: {
+                        minlength: "{$lang->js_validator_username_length}",
+                        maxlength: "{$lang->js_validator_username_length}",
+                    },
+                    email: "{$lang->js_validator_invalid_email}",
+                    email2: "{$lang->js_validator_email_match}",
+                },
+                errorPlacement: function(error, element) {
+                    if (element.is(':checkbox') || element.is(':radio'))
+                        error.insertAfter($('input[name="' + element.attr('name') + '"]').last().next('span'));
+                    else
+                        error.insertAfter(element);
+                }
+            });
+
+            {
+                $validator_extra
+            }
+        });
+    </script>
+    {$footer}
+</body>
+
+</html>
+]]></template><template name="modcp_nav" version="1809"><![CDATA[
+<td width="{$lang->nav_width}" valign="top">
+    <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+        <tr>
+            <td class="thead"><strong>{$lang->nav_menu}</strong></td>
+        </tr>
+        <tr>
+            <td class="trow1 smalltext"><a href="modcp.php" class="modcp_nav_item modcp_nav_home">{$lang->mcp_nav_home}</a></td>
+        </tr>
+        {$modcp_nav_forums_posts} {$modcp_nav_users}
+    </table>
+</td>
+]]></template><template name="portal" version="1809"><![CDATA[
+<html>
+
+<head>
+    <title>{$mybb->settings['bbname']}</title>
+    <link rel="alternate" type="application/rss+xml" title="{$lang->latest_announcements} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php?portal=1">
+    <link rel="alternate" type="application/atom+xml" title="{$lang->latest_announcements} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?portal=1&type=atom1.0"> {$headerinclude}
+
+</head>
+
+<body>
+    {$header}
+    <table width="100%" cellspacing="0" cellpadding="{$theme['tablespace']}" border="0" align="center">
+        <tr>
+            <td valign="top" width="200">
+                {$welcome} {$pms} {$search} {$stats} {$whosonline} {$latestthreads}
+            </td>
+            <td>&nbsp;</td>
+            <td valign="top">
+                {$announcements} {$multipage}
+            </td>
+        </tr>
+    </table>
+    {$footer} {$portalreadmore}
+</body>
+
+</html>
+]]></template><template name="portal_announcement" version="1809"><![CDATA[
+<table cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+    <tr>
+        <td class="thead"><strong>{$icon} <a href="{$mybb->settings['bburl']}/{$announcement['threadlink']}">{$announcement['subject']}</a></strong></td>
+    </tr>
+    <tr>
+        <td class="trow2" align="right"><span class="smalltext">{$lang->posted_by} {$profilelink}  - {$anndate} - {$lang->forum} <a href="{$mybb->settings['bburl']}/{$announcement['forumlink']}">{$announcement['forumname']}</a> {$numcomments}</span></td>
+    </tr>
+    <tr>
+        <td class="trow1">
+            <table border="0" cellpadding="{$theme['tablespace']}" class="tfixed" style="width:100%">
+                <tr>
+                    {$avatar}
+                    <td class="trow1 scaleimages">
+                        {$prm_pa_start}
+                        <p>
+                            {$message}
+                        </p>
+                        {$post['attachments']} {$prm_pa_end}
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" colspan="2" valign="bottom"><span class="smalltext"><a href="{$mybb->settings['bburl']}/printthread.php?tid={$announcement['tid']}"><img src="{$theme['imgdir']}/printable.png" alt="{$lang->print_this_item}" title="{$lang->print_this_item}"></a>{$senditem}
+			</span></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><br>
+]]></template><template name="portal_latestthreads_thread" version="1809"><![CDATA[
+<tr class="itrow latestthreads_portal">
+    <td class="itrow"><strong><a href="{$mybb->settings['bburl']}/{$thread['threadlink']}">{$thread['subject']}</a></strong><span class="smalltext"><br>{$lang->by} {$lastposterlink}<br> {$lastpostdate}
+
+  <br></span></td>
+</tr>
+]]></template><template name="postbit" version="1809"><![CDATA[
+{$ignore_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a><div class="post {$unapproved_shade}" style="" id="post_{$post['pid']}"><div class="post_author">
+	{$post['useravatar']}
+	<div class="author_information"><strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br><span class="smalltext">
+				{$post['usertitle']}<br>
+				{$post['userstars']}
+				{$post['groupimage']}
+			</span></div><div class="author_statistics">
+		{$post['user_details']}
+	</div></div><div class="post_content"><div class="post_head">
+		{$post['posturl']}
+		{$post['icon']}
+		<span class="post_date">{$post['postdate']} <span class="post_edit" id="edited_by_{$post['pid']}">{$post['editedmsg']}</span></span>
+		{$post['subject_extra']}
+	</div><div class="post_body scaleimages" id="pid_{$post['pid']}">
+		{$post['message']}
+	</div>
+	{$post['attachments']}
+	{$post['signature']}
+	<div class="post_meta" id="post_meta_{$post['pid']}">
+		{$post['iplogged']}
+	</div></div><div class="post_controls"><div class="postbit_buttons author_buttons float_left">
+		{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}
+	</div><div class="postbit_buttons post_management_buttons float_right">
+		{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quickrestore']}{$post['button_quote']}{$post['thanks']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_purgespammer']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}
+	</div>{$post['thxdsp_outline']}
+</div></div><br>]]></template><template name="postbit_classic" version="1809"><![CDATA[
+{$ignore_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a><div class="post classic {$unapproved_shade}" style="" id="post_{$post['pid']}"><div class="post_author scaleimages">
+	{$post['useravatar']}
+	<div class="author_information"><strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br><span class="smalltext">
+				{$post['usertitle']}<br>
+				{$post['userstars']}
+				{$post['groupimage']}
+			</span></div><div class="author_statistics">
+		{$post['user_details']}
+	</div></div><div class="post_content"><div class="post_head">
+		{$post['posturl']}
+		{$post['icon']}
+		<span class="post_date">{$post['postdate']} <span class="post_edit" id="edited_by_{$post['pid']}">{$post['editedmsg']}</span></span>
+	{$post['subject_extra']}
+	</div><div class="post_body scaleimages" id="pid_{$post['pid']}">
+		{$post['message']}
+	</div>
+	{$post['attachments']}
+	{$post['signature']}
+	<div class="post_meta" id="post_meta_{$post['pid']}">
+		{$post['iplogged']}
+	</div></div><div class="post_controls"><div class="postbit_buttons author_buttons float_left">
+		{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}
+	</div><div class="postbit_buttons post_management_buttons float_right">
+		{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quickrestore']}{$post['button_quote']}{$post['thanks']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_purgespammer']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}
+	}</div>{$post['thxdsp_outline']}
+</div></div><br>
+]]></template><template name="showthread" version="1809"><![CDATA[
+<html>
+
+<head>
+    <title>{$thread['subject']}</title>
+    {$headerinclude}
+    <script type="text/javascript">lang.processing="{$lang->thx_processing}"</script>
+    <script type="text/javascript">var quickdelete_confirm="{$lang->quickdelete_confirm}",quickrestore_confirm="{$lang->quickrestore_confirm}",allowEditReason="{$mybb->settings['alloweditreason']}";lang.save_changes="{$lang->save_changes}",lang.cancel_edit="{$lang->cancel_edit}",lang.quick_edit_update_error="{$lang->quick_edit_update_error}",lang.quick_reply_post_error="{$lang->quick_reply_post_error}",lang.quick_delete_error="{$lang->quick_delete_error}",lang.quick_delete_success="{$lang->quick_delete_success}",lang.quick_delete_thread_success="{$lang->quick_delete_thread_success}",lang.quick_restore_error="{$lang->quick_restore_error}",lang.quick_restore_success="{$lang->quick_restore_success}",lang.editreason="{$lang->postbit_editreason}"</script>
+    
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/report.js?ver=1804"></script>
+    <script src="{$mybb->asset_url}/jscripts/jeditable/jeditable.min.js"></script>
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/thread.js?ver=1804"></script>
+</head>
+
+<body>
+    {$header} {$threadnotesbox} {$pollbox}
+
+
+
+
+
+    <div class="float_left">
+        {$multipage}
+    </div>
+    <div class="float_right"><a title="Share on Google" href="https://plus.google.com/share?url={$mybb->settings['bburl']}/showthread.php?tid={$thread['tid']}"><i style="color:#dd4b39;font-size:15px" class="fa fa-google fa-fw"></i> &nbsp;</a><a title="Share on Facebook" href="http://www.facebook.com/share.php?u={$mybb->settings['bburl']}/showthread.php?tid={$thread['tid']}"><i style="color:#5272c1;font-size:15px" class="fa fa-facebook fa-fw"></i> &nbsp;</a><a title="Share on Twitter" href="http://twitter.com/home?status={$thread['subject']} - {$mybb->settings['bburl']}/showthread.php?tid={$thread['tid']}"><i style="color:#55acee;font-size:15px" class="fa fa-twitter fa-fw"></i> &nbsp;</a> {$newreply}
+    </div>
+    <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder5 tfixed clear">
+        <tr>
+            <td class="thead">
+                <div class="float_right"><span class="smalltext"><strong><a href="javascript:;" id="thread_modes">{$lang->thread_modes}</a>{$threadnoteslink}</strong></span></div>
+                <div><strong>{$thread['threadprefix']}{$thread['subject']}</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td id="posts_container">
+                <div id="posts">
+                    {$posts}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="tfoot"></td>
+        </tr>
+    </table>
+    <div class="float_left">
+        {$multipage}
+    </div>
+    <div style="padding-top:4px" class="float_right">
+        {$newreply}
+    </div><br class="clear"> {$quickreply} {$threadexbox} {$similarthreads}
+    <br>
+    <div class="float_right" style="text-align:right">
+        {$moderationoptions} {$forumjump}
+    </div><br class="clear"> {$usersbrowsing} {$footer}
+
+    <div id="thread_modes_popup" class="popup_menu" style="display:none">
+        <div class="popup_item_container"><a href="/printthread.php?tid={$tid}" class="popup_item"><i style="color:#646464;font-size:13px" class="fa fa-print fa-fw"></i> &nbsp; {$lang->view_printable}</a></div>
+        <div class="popup_item_container"><a href="usercp2.php?action={$add_remove_subscription}subscription&amp;tid={$tid}&amp;my_post_key={$mybb->post_code}" class="popup_item"><i style="color:#646464;font-size:13px" class="fa fa-bookmark fa-fw"></i> &nbsp; {$add_remove_subscription_text}</a></div>
+        <div class="popup_item_container"><a href="polls.php?action=newpoll&amp;tid={$tid}" class="popup_item"><i style="color:#646464;font-size:13px" class="fa fa-align-left fa-fw"></i> &nbsp; {$lang->add_poll_to_thread}</a></div>
+        <div class="popup_item_container"><a href="sendthread.php?tid={$tid}" class="popup_item"><i style="color:#646464;font-size:13px" class="fa fa-envelope fa-fw"></i> &nbsp; Send thread to a friend</a></div>
+    </div>
+    <script type="text/javascript">"1"==use_xmlhttprequest&&$("#thread_modes").popupMenu()</script>
+    <script type="text/javascript">$(".author_avatar img").error(function(){$(this).unbind("error").closest(".author_avatar").remove()})</script>
+</body>
+
+</html>
+]]></template><template name="showthread_quickreply" version="1809"><![CDATA[
+<div id="quickreply_spinner" class="showthread_spinner" style="display:none"><img src="{$theme['imgdir']}/spinner.gif"></div><br> {$moderation_notice}
+<form method="post" action="newreply.php?tid={$tid}&amp;processed=1" name="quick_reply_form" id="quick_reply_form"><input type="hidden" name="my_post_key" value="{$mybb->post_code}"><input type="hidden" name="subject" value="RE: {$reply_subject}"><input type="hidden" name="action" value="do_newreply"><input type="hidden" name="posthash" value="{$posthash}" id="posthash"><input type="hidden" name="quoted_ids" value="" id="quoted_ids"><input type="hidden" name="lastpid" id="lastpid" value="{$last_pid}"><input type="hidden" name="from_page" value="{$page}"><input type="hidden" name="tid" value="{$tid}"><input type="hidden" name="method" value="quickreply">
+    <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+        <thead>
+            <tr>
+                <td class="thead" colspan="2">
+                    <div class="expcolimage"><img src="{$theme['imgdir']}/collapse{$collapsedimg['quickreply']}.png" id="quickreply_img" class="expander" alt="[-]" title="[-]"></div>
+                    <div><strong>{$lang->quick_reply}</strong></div>
+                </td>
+            </tr>
+        </thead>
+        <tbody style="" id="quickreply_e">
+            <tr>
+                <td class="{$trow}" valign="top" width="22%"><strong>{$lang->message}</strong><br><span class="smalltext">{$lang->message_note}<br><br>
+					{$option_signature}
+					<label><input type="checkbox" class="checkbox" name="postoptions[disablesmilies]" value="1">&nbsp;<strong>{$lang->disable_smilies}</strong></label>{$closeoption}</span></td>
+                <td class="{$trow}">
+                    <div style="width:95%"><textarea style="width:100%;padding:4px;margin:0" rows="8" cols="80" name="message" id="message" tabindex="1"></textarea></div>
+                    <div class="editor_control_bar" style="width:95%;padding:4px;margin-top:3px;display:none" id="quickreply_multiquote"><span class="smalltext">
+							{$lang->quickreply_multiquote_selected} <a href="./newreply.php?tid={$tid}&amp;load_all_quotes=1" onclick="return Thread.loadMultiQuoted()">{$lang->quickreply_multiquote_now}</a> {$lang->or} <a href="javascript:Thread.clearMultiQuoted();">{$lang->quickreply_multiquote_deselect}</a>.
+						</span></div>
+                </td>
+            </tr>
+            {$captcha}
+            <tr>
+                <td colspan="2" align="center" class="trow1"><input type="submit" class="button" value="{$lang->post_reply}" tabindex="2" accesskey="s" id="quick_reply_submit"><input type="submit" class="button" name="previewpost" value="{$lang->preview_post}" tabindex="3"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+]]></template><template name="showthread_usersbrowsing" version="1809"><![CDATA[
+<br>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+    <tr>
+        <td class="thead"><strong>{$lang->users_browsing_thread} </strong></td>
+    </tr>
+    <tr>
+        <td class="trow1"><span class="smalltext">{$onlinemembers}{$onlinesep}{$invisonline}{$onlinesep2}{$guestsonline}</span></td>
+    </tr>
+</table>
+<br>
+]]></template><template name="usercp_nav_misc" version="1809"><![CDATA[
+<tbody>
+    <tr>
+        <td class="tcat tcat_menu tcat_collapse{$collapsedimg['usercpmisc']}">
+            <div class="expcolimage"><img src="{$theme['imgdir']}/collapse{$collapsedimg['usercpmisc']}.png" id="usercpmisc_img" class="expander" alt="[-]" title="[-]"></div>
+            <div><span class="smalltext"><strong>{$lang->ucp_nav_misc}</strong></span></div>
+        </td>
+    </tr>
+</tbody>
+<tbody style="" id="usercpmisc_e">
+    <tr>
+        <td class="trow1 smalltext"><a href="usercp.php?action=usergroups" class="usercp_nav_item usercp_nav_usergroups">{$lang->ucp_nav_usergroups}</a></td>
+    </tr>
+    <tr>
+        <td class="trow1 smalltext"><a href="usercp.php?action=editlists" class="usercp_nav_item usercp_nav_editlists">{$lang->ucp_nav_editlists}</a></td>
+    </tr>
+    {$attachmentop}
+    <tr>
+        <td class="trow1 smalltext"><a href="usercp.php?action=drafts" class="usercp_nav_item usercp_nav_drafts">{$draftcount}</a></td>
+    </tr>
+    <tr>
+        <td class="trow1 smalltext"><a href="usercp.php?action=subscriptions" class="usercp_nav_item usercp_nav_subscriptions">{$lang->ucp_nav_subscribed_threads}</a></td>
+    </tr>
+    <tr>
+        <td class="trow1 smalltext"><a href="usercp.php?action=forumsubscriptions" class="usercp_nav_item usercp_nav_fsubscriptions">{$lang->ucp_nav_forum_subscriptions}</a></td>
+    </tr>
+    <tr>
+        <td class="trow1 smalltext"><a href="{$profile_link}" class="usercp_nav_item usercp_nav_viewprofile">{$lang->ucp_nav_view_profile}</a></td>
+    </tr>
+    <tr>
+        <td class="trow1 smalltext"><a href="usercp.php?action=userautomedia" class="usercp_nav_item usercp_nav_options">{$lang->av_ucp_menu}</a></td>
+    </tr>
+</tbody>
+]]></template></templates>
+  </stylesheets>
+</theme>

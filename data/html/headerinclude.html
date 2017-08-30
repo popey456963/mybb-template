@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1806"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1806"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1807"></script>
+<script type="text/javascript" src="images/vienna/bootstrap.min.js"></script>
+<script type="text/javascript" src="images/vienna/main.js"></script>
+<script type="text/javascript" src="images/vienna/jquery.tipsy.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+<!-- image for link preview -->
+<meta property="twitter:image" content="https://clwo.eu/mediakit/clwo_avatar_steam.png" />
+<meta property="og:image" content="https://clwo.eu/mediakit/clwo_avatar_steam.png" />
+<meta property="og:image:secure_url" content="https://clwo.eu/mediakit/clwo_avatar_steam.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="184" />
+<meta property="og:image:height" content="184" />
+<link type="text/css" rel="stylesheet" href="cache/themes/global/thanks/thx.css" />
+<script type="text/javascript" src="jscripts/thx.js"></script>
+{$stylesheets} {$portalreadmore_css}
+<script type="text/javascript">
+    <!--
+    lang.unknown_error = "{$lang->unknown_error}";
+
+    lang.select2_match = "{$lang->select2_match}";
+    lang.select2_matches = "{$lang->select2_matches}";
+    lang.select2_nomatches = "{$lang->select2_nomatches}";
+    lang.select2_inputtooshort_single = "{$lang->select2_inputtooshort_single}";
+    lang.select2_inputtooshort_plural = "{$lang->select2_inputtooshort_plural}";
+    lang.select2_inputtoolong_single = "{$lang->select2_inputtoolong_single}";
+    lang.select2_inputtoolong_plural = "{$lang->select2_inputtoolong_plural}";
+    lang.select2_selectiontoobig_single = "{$lang->select2_selectiontoobig_single}";
+    lang.select2_selectiontoobig_plural = "{$lang->select2_selectiontoobig_plural}";
+    lang.select2_loadmore = "{$lang->select2_loadmore}";
+    lang.select2_searching = "{$lang->select2_searching}";
+
+    var cookieDomain = "{$mybb->settings['cookiedomain']}";
+    var cookiePath = "{$mybb->settings['cookiepath']}";
+    var cookiePrefix = "{$mybb->settings['cookieprefix']}";
+    var deleteevent_confirm = "{$lang->deleteevent_confirm}";
+    var removeattach_confirm = "{$lang->removeattach_confirm}";
+    var loading_text = '{$lang->ajax_loading}';
+    var saving_changes = '{$lang->saving_changes}';
+    var use_xmlhttprequest = "{$mybb->settings['use_xmlhttprequest']}";
+    var my_post_key = "{$mybb->post_code}";
+    var rootpath = "{$mybb->settings['bburl']}";
+    var imagepath = "{$theme['imgdir']}";
+    var yes_confirm = "{$lang->yes}";
+    var no_confirm = "{$lang->no}";
+    var MyBBEditor = null;
+    var spinner_image = "{$theme['imgdir']}/spinner.gif";
+    var spinner = "<img src='" + spinner_image + "' alt='' />";
+    var modal_zindex = 9999;
+    // -->
+</script>
+<script type="text/javascript">
+    $(function() {
+        $("a").tipsy({
+            gravity: $.fn.tipsy.autoNS,
+            fade: true
+        });
+        $("title").tipsy({
+            gravity: $.fn.tipsy.autoNS,
+            fade: true
+        });
+        $("img").tipsy({
+            gravity: $.fn.tipsy.autoNS,
+            fade: true
+        });
+        $("i").tipsy({
+            gravity: $.fn.tipsy.autoNS,
+            fade: true
+        });
+        $("span").tipsy({
+            gravity: $.fn.tipsy.autoNS,
+            fade: true
+        });
+        $("div").tipsy({
+            gravity: $.fn.tipsy.autoNS,
+            fade: true
+        });
+    });
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        var offset = 100;
+        var duration = 250;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery(".topforum").fadeIn(duration);
+            } else {
+                jQuery(".topforum").fadeOut(duration);
+            }
+        });
+
+        jQuery('.topforum').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        })
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cheet.js/0.3.3/cheet.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.9/jquery.popupoverlay.js"></script>
+<script>
+    cheet('↑ ↑ ↓ ↓ ← → ← → b a', function() {
+        $('#standalone').popup('show');
+    });
+    $(document).ready(function() {
+
+        $('#standalone').popup({
+            color: 'white',
+            opacity: 1,
+            transition: '0.3s',
+            scrolllock: true
+        });
+
+    });
+</script>
+<style>
+    #standalone {
+        transform: scale(0.8);
+    }
+
+    .popup_visible #standalone {
+        transform: scale(1);
+    }
+</style>
+<noscript>
+    <style>
+        #standalone {display:none;}
+    </style>
+</noscript>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js" integrity="sha256-QHhbHxeq7BcXuPYY/Ag1hUAVg4MCgA2HPZRRwOr/QTg=" crossorigin="anonymous"></script>

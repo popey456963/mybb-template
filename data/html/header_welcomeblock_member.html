@@ -1,0 +1,21 @@
+<table class="trowm" width="100%" cellspacing="0" cellpadding="{$theme['tablespace']}" border="0" align="center">
+    <tr>
+        <td>
+            <div style="margin-top: 35px;"><span style="color:#fff;">Welcome Back, </span><span class="dropdown"><a class="white" data-toggle="dropdown" href="#">
+{$mybb->user['username']} <i style="font-size: 9px;" class="fa fa-chevron-down fa-fw"></i></a> &nbsp;
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php"> User Panel </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=profile"> Edit Profile </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=options"> Edit Options </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=editsig"> Edit Signature </a></li><li role="presentation"><a href="{$mybb->settings['bburl']}/usercp.php?action=editlists"> Friends List </a></li>
+
+{$modcplink}
+{$admincplink}
+ </ul></a></span><a title="Unread Messages" style="margin-top: 5px;" href="{$mybb->settings['bburl']}/private.php" id="pm_notification">  {$mybb->user['pms_unread']}  </a> &nbsp;
+                <a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"><span style="color:#fff;"> Sign Out</span></a></td>
+    </tr>
+</table>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //create a default avatar for those without one.
+        if ($('.header_avatar img', this).attr('src') == '') {
+            $('.header_avatar img').attr('src', "images/vienna/default_avatar.png");
+        }
+    });
+</script>

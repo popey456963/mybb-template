@@ -1,0 +1,23 @@
+<tr style="background-color: #f1f1f1;">
+    <td>
+        <table cellspacing="0" cellpadding="4" border="0" align="left" width="100%" class="backtrow" style="font-size:14px; position: relative;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="middle" width="1">
+                        <div class="forum_status forum_{$lightbulb['folder']} ajax_mark_read" title="{$lightbulb['altonoff']}" id="mark_read_{$forum['fid']}"><i class="fa fa-quote-right"></i></div>
+                    </td>
+                    <td valign="middle">
+                        <!--<a id="fadehover" href="{$mybb->settings['bburl']}/syndication.php?fid={$forum['fid']}&amp;limit=15"><img src="images/vienna/rss.png" alt="RSS" title="RSS" /></a>--><strong><a href="{$forum_url}"><strong>{$forum['name']}</strong></a>
+                        </strong>
+                        <div class="smalltext">{$forum_viewers_text} {$forum['description']} {$modlist} {$subforums}</div>
+                    </td>
+                    <td align="right" valign="midle" style="white-space: nowrap">
+                        <font color="#b4b4b4">{$threads}{$unapproved['unapproved_threads']} </font> &nbsp; &nbsp; <br />
+                        <font color="#b4b4b4">Topics</font> &nbsp; &nbsp;
+                    </td>
+                    <td align="left" width="25%" valign="middle" style="white-space: nowrap;">{$lastpost}</td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>

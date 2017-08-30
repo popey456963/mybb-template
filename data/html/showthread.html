@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>{$thread['subject']}</title>
+    {$headerinclude}
+    <script type="text/javascript">
+        // <!--
+        lang.processing = '{$lang->thx_processing}';
+        // -->
+    </script>
+    <script type="text/javascript">
+        <!--
+        var quickdelete_confirm = "{$lang->quickdelete_confirm}";
+        var quickrestore_confirm = "{$lang->quickrestore_confirm}";
+        var allowEditReason = "{$mybb->settings['alloweditreason']}";
+        lang.save_changes = "{$lang->save_changes}";
+        lang.cancel_edit = "{$lang->cancel_edit}";
+        lang.quick_edit_update_error = "{$lang->quick_edit_update_error}";
+        lang.quick_reply_post_error = "{$lang->quick_reply_post_error}";
+        lang.quick_delete_error = "{$lang->quick_delete_error}";
+        lang.quick_delete_success = "{$lang->quick_delete_success}";
+        lang.quick_delete_thread_success = "{$lang->quick_delete_thread_success}";
+        lang.quick_restore_error = "{$lang->quick_restore_error}";
+        lang.quick_restore_success = "{$lang->quick_restore_success}";
+        lang.editreason = "{$lang->postbit_editreason}";
+        // -->
+    </script>
+    <!-- jeditable (jquery) -->
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/report.js?ver=1804"></script>
+    <script src="{$mybb->asset_url}/jscripts/jeditable/jeditable.min.js"></script>
+    <script type="text/javascript" src="{$mybb->asset_url}/jscripts/thread.js?ver=1804"></script>
+</head>
+
+<body>
+    {$header} {$threadnotesbox} {$pollbox}
+
+
+
+
+
+    <div class="float_left">
+        {$multipage}
+    </div>
+    <div class="float_right"><a title="Share on Google" href="https://plus.google.com/share?url={$mybb->settings['bburl']}/showthread.php?tid={$thread['tid']}"><i style="color: #dd4b39; font-size: 15px;" class="fa fa-google fa-fw"></i> &nbsp;</a><a title="Share on Facebook" href="http://www.facebook.com/share.php?u={$mybb->settings['bburl']}/showthread.php?tid={$thread['tid']}"><i style="color: #5272c1; font-size: 15px;" class="fa fa-facebook fa-fw"></i> &nbsp;</a><a title="Share on Twitter" href="http://twitter.com/home?status={$thread['subject']} - {$mybb->settings['bburl']}/showthread.php?tid={$thread['tid']}"><i style="color: #55acee; font-size: 15px;" class="fa fa-twitter fa-fw"></i> &nbsp;</a> {$newreply}
+    </div>
+    <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder5 tfixed clear">
+        <tr>
+            <td class="thead">
+                <div class="float_right"><span class="smalltext"><strong><a href="javascript:;" id="thread_modes">{$lang->thread_modes}</a>{$threadnoteslink}</strong></span></div>
+                <div><strong>{$thread['threadprefix']}{$thread['subject']}</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td id="posts_container">
+                <div id="posts">
+                    {$posts}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="tfoot"></td>
+        </tr>
+    </table>
+    <div class="float_left">
+        {$multipage}
+    </div>
+    <div style="padding-top: 4px;" class="float_right">
+        {$newreply}
+    </div><br class="clear" /> {$quickreply} {$threadexbox} {$similarthreads}
+    <br />
+    <div class="float_right" style="text-align: right;">
+        {$moderationoptions} {$forumjump}
+    </div><br class="clear" /> {$usersbrowsing} {$footer}
+
+    <div id="thread_modes_popup" class="popup_menu" style="display: none;">
+        <div class="popup_item_container"><a href="/printthread.php?tid={$tid}" class="popup_item"><i style="color: #646464; font-size: 13px;" class="fa fa-print fa-fw"></i> &nbsp; {$lang->view_printable}</a></div>
+        <div class="popup_item_container"><a href="usercp2.php?action={$add_remove_subscription}subscription&amp;tid={$tid}&amp;my_post_key={$mybb->post_code}" class="popup_item"><i style="color: #646464; font-size: 13px;" class="fa fa-bookmark fa-fw"></i> &nbsp; {$add_remove_subscription_text}</a></div>
+        <div class="popup_item_container"><a href="polls.php?action=newpoll&amp;tid={$tid}" class="popup_item"><i style="color: #646464; font-size: 13px;" class="fa fa-align-left fa-fw"></i> &nbsp; {$lang->add_poll_to_thread}</a></div>
+        <div class="popup_item_container"><a href="sendthread.php?tid={$tid}" class="popup_item"><i style="color: #646464; font-size: 13px;" class="fa fa-envelope fa-fw"></i> &nbsp; Send thread to a friend</a></div>
+    </div>
+    <script type="text/javascript">
+        // <!--
+        if (use_xmlhttprequest == "1") {
+            $("#thread_modes").popupMenu();
+        }
+        // -->
+    </script>
+    <script type="text/javascript">
+        $(".author_avatar img").error(function() {
+            $(this).unbind("error").closest('.author_avatar').remove();
+        });
+    </script>
+</body>
+
+</html>

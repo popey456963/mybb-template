@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Vienna Optimised" {{version}}>
+	<properties>
+		<templateset><![CDATA[11]]></templateset>
+		<editortheme><![CDATA[mybb.css]]></editortheme>
+		<imgdir><![CDATA[images/vienna]]></imgdir>
+		<logo><![CDATA[images/vienna/logo.png]]></logo>
+		<tablespace><![CDATA[5]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<color><![CDATA[]]></color>
+		<disporder>{{disporder}}</disporder>
+	</properties>
+
+	<stylesheets>
+		<stylesheet name="global.css" {{version}}>{{stylesheet}}</stylesheet>
+    <templates>{{templates}}</templates>
+  </stylesheets>
+</theme>
