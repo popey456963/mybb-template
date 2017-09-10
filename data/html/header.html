@@ -81,76 +81,32 @@
                 <navigation><br /> {$pm_notice} {$bannedwarning} {$bbclosedwarning} {$unreadreports} {$pending_joinrequests}
                     <br />
                     <script>
-                        var jSonDone;
-                        var CLWO_JB;
-                        var jsontime;
-                        get_server();
-                        setInterval(get_server, 7000);
-                        setInterval(get_extra, 7000);
 
-                        function get_server() {
-                            console.log("Getting server status");
-                            //$("#server_status_text").html("<a style='color:#FF9900' href='#'>Checking ...<i style='' class='fa fa-refresh fa-spin'></i></a><br/>...").fadeIn(3000);
-                            $.getJSON("https://clwo.eu/jailbreak/api/v1/server/info.php", function(jSon) {
-                                jSonDone = jSon;
-                                CLWO_JB = jSonDone.data;
-                                if (typeof CLWO_JB !== 'undefined') {
-                                    jsontime = new Date(1000 * jSonDone.stats.time);
-                                    //$("#server_status_text").html("<a style='color:#66CC33' href='steam://connect/jb.clwo.eu'>Online <i style='' class='fa fa-check-circle'></i></a> "+ CLWO_JB.numberOfPlayers + "/"+ --CLWO_JB.maxPlayers + " players on "+ CLWO_JB.mapName +" (last checked at "+ jsontime.getHours() + ":" + jsontime.getMinutes() + ":" + jsontime.getSeconds() +")<br/><a href='steam://connect/jb.clwo.eu'><i style='' class='fa fa-hand-o-right'></i> Click here to join jailbreak server <i style='' class='fa fa-hand-o-left'></i></a>").fadeIn(3000);
-                                    $("#server_status_text").html("<a style='color:#66CC33' href='steam://connect/jb.clwo.eu'>Online <i style='' class='fa fa-check-circle'></i></a> " + CLWO_JB.numberOfPlayers + "/" + CLWO_JB.maxPlayers + " players on " + CLWO_JB.mapName + "<br><span id='server_status_extra'>#waiting_for_data#</span><br/><a href='steam://connect/jb.clwo.eu'><i style='' class='fa fa-hand-o-right'></i> Click here to join the jailbreak server <i style='' class='fa fa-hand-o-left'></i></a>").fadeIn(3000);
-                                    get_extra();
-                                    return;
-                                    //return console.log('%c Jailbreak Server Online! ', 'background: #222; color: #bada55');
-                                } else {
-                                    $("#server_status_text").html("<a style='color:#990000' href='#'>Offline <i style='' class='fa fa-exclamation'></i></a>").fadeIn(3000);
-                                    return;
-                                    //return console.log('%c Jailbreak Server Offline :( ', 'background:  #222; color: #D80000');
-                                }
-                            });
-                        }
-
-                        function get_extra() {
-                            $.getJSON("https://clwo.eu/jailbreak/api/v1/server/rules.php", function(data) {
-                                if (typeof data.data.Warden !== 'undefined') {
-                                    $("#server_status_extra").text("Staff: " + data.data.Staff_online + " - Warden: '" + data.data.Warden + "'").fadeIn(3000);
-                                }
-                            });
-                        }
-                    </script>
-                    <!-- server status -->
-                    <div class="pm_alert" style="background: #333;">
-                        <div id="server_status_text"></div>
-                        <div id="clwo_server_network"></div>
-                    </div>
-                    <script id="tpl_clwo_server_network" type="text/template">
-                        {{#each this}} {{#if_eq this.ServerID 1}} {{else}} {{ShortName}} {{qrd.info.numberOfPlayers}}/{{qrd.info.maxPlayers}} - {{ qrd.info.mapName }} <a href="steam://connect/{{Prefix}}.clwo.eu/{{Port}}"><i class="fa fa-play fa-fw" aria-hidden="true"></i></a> {{/if_eq}} {{/each}}
-
-                    </script>
-                    <script>
-                        $(document).ready(function() {
-                            //network
-                            var GetNetworkInternval = setInterval(GetNetwork, 5000);
-                            GetNetwork();
-                        });
-                        Handlebars.registerHelper('if_eq', function(a, b, opts) {
-                            if (a == b) {
-                                return opts.fn(this);
-                            } else {
-                                return opts.inverse(this);
-                            }
-                        });
-
-                        function GetNetwork() {
-                            $.ajax({
-                                url: "https://clwo.eu/jailbreak/api/v2/networkquery.php",
-                                type: 'GET',
-                                timeout: 3500,
-                            }).done(function(data, textStatus, jqXHR) {
-                                //console.log(data);
-                                var template = $(tpl_clwo_server_network).html();
-                                var filled_template = Handlebars.compile(template)(data.data);
-                                $('#clwo_server_network').html(filled_template);
-
-                            })
-                        };
-                    </script>
+            						function get_server_info() {
+            							$.getJSON('https://header.sinisterheavens.com/', function(json) {
+            								var network_info = ''
+            								for (var name in json.servers) {
+            									server = json.servers[name]
+            									if (name == 'Jailbreak') {
+            										$('#server_status_text').html("" +
+            											"<a style='color:#66CC33' href='steam://connect/jb.clwo.eu'>Online <i class='fa fa-check-circle'></i></a> " +
+            											"" + server.player_count + " / " + server.max_players + " players on " + server.map + " <br />" +
+            											"<span id='server_status_extra'>Staff: " + server.staff + " - Warden: " + server.warden + " <br />" +
+            											"<a href='steam://connect/jb.clwo.eu'><i class='fa fa-hand-o-right'></i> Click here to join the jailbreak server <i class='fa fa-hand-o-left'></i></a>")
+            									} else {
+            										network_info += "" + name + " " + server.player_count + "/" + server.max_players + " - " + server.map + " <a href='steam://connect/" + server.ip + "'><i class='fa fa-play fa-fw' aria-hidden='true'></i> </a>"
+            									}
+            								}
+            								$('#clwo_server_network').html(network_info)
+            							})
+            						}
+                        $(function() {
+                          setInterval(get_server_info, 5000)
+                          get_server_info()
+                        })
+            				</script>
+            				<!-- server status -->
+            				<div class="pm_alert" style="background: #333;">
+            						<div id="server_status_text"></div>
+            						<div id="clwo_server_network"></div>
+            				</div>

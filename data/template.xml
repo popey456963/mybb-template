@@ -11,8 +11,6 @@
 		<disporder>{{disporder}}</disporder>
 	</properties>
 
-	<stylesheets>
-		<stylesheet name="global.css" {{version}}>{{stylesheet}}</stylesheet>
-    <templates>{{templates}}</templates>
-  </stylesheets>
+	<stylesheets>{{stylesheets}}</stylesheets>
+	<templates>{{templates}}</templates>
 </theme>
